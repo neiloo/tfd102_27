@@ -80,11 +80,11 @@
                 <td>單件價格</td>
                 <td>數量</td>
                 <td>小計</td>
-                <td class="delete"><a href="#">&times;</a></td>
+                <td>取消</td>
               </tr>
               <tr>
                 <td colspan="2">
-                  <img src="../fernholic/images/product/product1.png" alt="">
+                  <img src="./images/product/product1.png" alt="">
                   小美人魚 - 亞猴 Ｘ 圓盾
                 </td>
                 <td>購物滿兩件八折優惠</td>
@@ -95,7 +95,7 @@
               </tr>
               <tr>
                 <td colspan="2">
-                  <img src="../fernholic/images/product/product5.png" alt="">
+                  <img src="./images/product/product5.png" alt="">
                   海倫仙度絲 - 波斯頓腎蕨
                 </td>
                 <td>購物滿兩件八折優惠</td>
@@ -112,33 +112,60 @@
         </div>
 
         <div class="col-6 order-form">
+          <p>選擇送貨及付款方式</p>
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <label for="exampleInputEmail1" class="form-label">送貨地點</label>
               <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">台灣</button>
                 <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  <li><a class="dropdown-item" href="#">香港</a></li>
+                  <li><a class="dropdown-item" href="#">澳門</a></li>
                 </ul>
               </div>
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="exampleInputEmail1" class="form-label">送貨方式</label>
+              <div class="input-group mb-3">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">7-11 取貨付款</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">7-11 取貨不付款</a></li>
+                  <li><a class="dropdown-item" href="#">郵局宅配</a></li>
+                </ul>
+              </div>
+              <div id="emailHelp" class="form-text">下單後 3-5 天工作天到貨.</div>
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">付款方式</label>
+              <div class="input-group mb-3">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">7-11 取貨付款</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">7-11 取貨付款</a></li>
+                </ul>
+              </div>
             </div>
           </form>
         </div>
-        <div class="col-5 offset-md-1 order-summary">.col-6<br>Subsequent columns continue along the new line.</div>
+        <div class="col-5 offset-md-1 order-summary">
+          <div class="order-summary_inner">
+            <p>訂單資訊</p>
+            <table>
+              <tr>
+                <td>小計:</td>
+                <td>NT $3,034</td>
+              </tr>
+              <tr>
+                <td>運費:</td>
+                <td>NT $60</td>
+              </tr>
+              <tr>
+                <td>合計:</td>
+                <td>NT $3,096</td>
+              </tr>
+            </table>
+            <button type="submit">前往結賬</button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
