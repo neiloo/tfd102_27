@@ -18,6 +18,50 @@ section.kv h1{
     width: 500px;
     position: absolute;
 }
+.photo{
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.grid-item .photo .cover{
+  border: 1px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #34534e99;
+  display: none;
+}
+
+.grid-item .photo a:hover .cover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+.grid-item .photo .cover img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.grid-item .photo .cover span{
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 2.5rem 0 0.5rem;
+}
+
+.grid-item.-item1 .photo .cover span{
+  /* border: 1px solid red; */
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 8rem 0 1rem;
+}
+
+
+
 .photo_list{
     width: 900px;
     margin: 0 auto;
@@ -46,6 +90,13 @@ section.kv h1{
     width: 100%;
     height: 100%;
 }
+
+.grid-item .photo a img:hover{
+  /* border: 2px solid orange; */
+  width: 100%;
+  height: 100%;
+}
+
 
 
 section.photo-list{
