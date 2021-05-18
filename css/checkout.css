@@ -105,6 +105,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     height: 5rem;
+    padding: 1.5rem 1rem;
 }
 
 /* .cart-items th, .cart-items td{
@@ -195,7 +196,7 @@
 
 /** order-summary **/
 .order-summary{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     font-size: 1.4rem;
     padding: 1rem 1rem;
 }
@@ -205,8 +206,52 @@
 }
 
 .order-summary_inner table{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
-
 }
 
+.order-summary_inner > p{
+    border-bottom: none;
+    background-color: #B5D9D5;
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 5rem;
+    padding: 1.5rem 1rem;
+}
+
+.order-summary_inner table tr{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+
+}
+.order-summary_inner table tr:first-child td{
+    /* border: 2px solid blue; */
+    margin-top: 0.3rem;;
+}
+
+.order-summary_inner table tr:nth-child(2) td{
+    /* border-top: 2px solid blue; */
+    margin-bottom: 5rem;
+}
+
+.order-summary_inner table tr:last-child{
+        border-top: 1px solid lightgrey;
+        font-weight: bold;
+        font-size: 1.6rem;
+}
+
+.order-summary_inner table tr:last-child td:last-child{
+    color: #DCAE72;
+}
+
+.order-summary_inner button{
+    width: 98%;
+    /* padding: 1rem 1rem; */
+    margin-left: 1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    height: 4rem;
+    background-color: #1E464A;
+    color: #DCAE72;
+}
