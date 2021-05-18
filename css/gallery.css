@@ -1,0 +1,115 @@
+main {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+section.kv{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 30rem;
+    background-image: url(../images/gallery_bg.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+section.kv h1{
+    border: 1px solid black;
+    width: 500px;
+    position: absolute;
+}
+.photo_list{
+    width: 900px;
+    margin: 0 auto;
+}
+.grid-container {
+    display: grid;
+    /* border: 1px solid black; */
+    grid-template-areas: "first first ." "first first . ";
+    padding: 5rem 150px;
+    gap: 40px;
+  }
+  
+  .grid-item {
+    /* border: 1px solid red; */
+    /* padding: 20px; */
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-item:nth-child(1){
+    /* 這個 item 命名為 first */
+    grid-area: first;
+  }
+
+  .grid-item .photo a img{
+    /* border: 2px solid orange; */
+    width: 100%;
+    height: 100%;
+}
+
+
+section.photo-list{
+    width: var(--page-width);
+    /* border: 1px solid red; */
+    margin: 50px auto;
+}
+
+.photo-list .container{
+    background-image: url(../images/shoplist_shopbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    gap: 0.5rem;
+    /* padding: 50px; */
+    /* margin: 50px; */
+}
+
+.photo a{
+    width: 100%;
+    text-decoration: none;
+}
+.photo a .photo-info{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    display: none;
+}
+/** 分頁**/
+.pagination {
+    /* border: 1px solid green; */
+    display: inline-block;
+    font-size: 0;
+    width: 40%;
+    /* position: absolute;
+    left: 50%; */
+    margin-left: 32%;
+  }
+  
+  .pagination a {
+    color: black;
+    font-size: 1rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    border-right: 0;
+  }
+  
+  .pagination a:last-child{
+    border-right: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .pagination a:first-child{
+    display: inline-block;
+    border-radius: 5px 0 0 5px;
+  }
+  .pagination a.active {
+    background-color: #438286;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  

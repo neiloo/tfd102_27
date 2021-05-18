@@ -1,0 +1,128 @@
+main {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+section.product_list{
+    width: var(--page-width);
+    /* border: 1px solid red; */
+    margin: 50px auto;
+}
+
+.category{
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 40%;
+    font-size: 1.6rem;
+    margin: 20px auto;
+}
+
+.category li{
+    /* border: 1px solid blue; */
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.category li a{
+    text-decoration: none;
+    color: #1E464A;
+}
+
+.category li a:hover{
+    border-bottom: 3px solid #DCAE72;
+    border-radius:  1px;
+    color: #b5d9d5;
+    padding-bottom: 10px;
+}
+
+.-filter{
+    border-bottom: 3px solid #DCAE72;
+    border-radius:  1px;
+    color: #b5d9d5;
+    padding-bottom: 10px;
+  }
+
+/** 產品 **/
+.container{
+    /* border: 1px solid blue; */
+    background-image: url(../images/shoplist_shopbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    padding: 50px;
+    margin: 50px;
+}
+
+.container a{
+    display: block;
+    /* border: 1px solid grey; */
+    width: 80%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.container img{
+  /* border: 1px solid black; */
+  width: 25rem;
+  height: 25rem;
+}
+
+.container a p.name, .container a p.price{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    color: #1E464A;
+
+}
+
+.container a:hover p{
+    /* background-color: hsla(0, .5, .5, .5); */
+    color:#438286;
+}
+
+
+/** 分頁**/
+.pagination {
+    /* border: 1px solid green; */
+    display: inline-block;
+    font-size: 0;
+    width: 40%;
+    /* position: absolute;
+    left: 50%; */
+    margin-left: 36%;
+  }
+  
+  .pagination a {
+    color: black;
+    font-size: 1rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    border-right: 0;
+  
+  }
+  
+  .pagination a:last-child{
+    border-right: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .pagination a:first-child{
+    display: inline-block;
+    border-radius: 5px 0 0 5px;
+  }
+  .pagination a.active {
+    background-color: #438286;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+

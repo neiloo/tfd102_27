@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shop_detail</title>
+  <link rel="stylesheet" href="./css/common/reset.css">
+  <link rel="stylesheet" href="./css/common/all.css">
+  <link rel="stylesheet" href="./css/common/header.css">
+  <link rel="stylesheet" href="./css/common/footer.css">
+  <link rel="stylesheet" href="./css/shop_detail.css">
+  <!-- owlCarousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="">
+      <nav class="navbar">
+        <a href="./" class="logo"><img src="./images/logo.png"></a>
+        <ul class="nav_list">
+          <li>
+            <a href="./" target="">關於我們</a>
+          </li>
+          <li>
+            <a href="./shop_list.html" target="" class="-on">線上商品</a>
+          </li>
+          <li>
+            <a href="./blog.html" target="">Blog</a>
+          </li>
+          <li>
+            <a href="./gallery.html" target="">Gallery</a>
+          </li>
+          <li>
+            <a href="./contact.html" target="">聯絡我們</a>
+          </li>
+          <li class="cart">
+            <a href="./shop_list.html">
+              <img src="./images/icon_cart.png">
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <section class="shop_detail" style="margin-top: 100px;">
+      <div class="grid_container">
+        <div class="grid_item">
+          <!-- <p>左欄</p> -->
+          <div class="detail_photos">
+            <div>
+              <img id="main_photo" src="./images/mainpic_300.PNG" alt="">
+            </div>
+
+            <div>
+              <a class="thumb_img" href="#"><img src="./images/pic_100.jpg" data-img="./images/pic_300.jpg" alt=""></a>
+              <a class="thumb_img" href="#"><img src="./images/pic2_100.jpg" data-img="./images/pic2_300.jpg"
+                  alt=""></a>
+              <a class="thumb_img" href="#"><img src="./images/pic3_100.jpg" data-img="./images/pic3_300.jpg"
+                  alt=""></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="grid_item product_info">
+          <h1 class="title1">鹿角蕨Platy. Omo 'Little Mermaid' 小美人魚 4吋黑盆</h1>
+          <ul class="desc_list">
+            <li>市價：<span class="original_price">$2200</span></li>
+            <li>售價：<span class="sell_price">$1850</span></li>
+          </ul>
+          <p>
+            1. 上板鹿角蕨植株店到店交貨便只能寄一件，如果2件以上鹿角蕨需寄郵局運費80元<br>
+            2. 全島不分區每箱均統一運費 $100<br>
+            3. 全日照或半日照明亮環境，土乾澆水，保持良好通風與排水，防止過度潮濕<br>
+            4. 規格:4吋盆 <br>
+            5. 本商品不含介質，鹿角蕨介質可用水苔，樹皮，可加購水苔一份50元 <br>
+          </p>
+
+
+          <form class="buy_form" action="#" method="#">
+            <div class="item_block">
+              <label class="label_item">購買數量：</label>
+              <input type="number" class="buy_count" value="1" min="1">
+            </div>
+            <div class="item_block">
+              <span class="temp"></span>
+              <button type="submit" class="addcart">加入購物車</button>
+              <button type="submit" class="gobuy">直接購買</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="lower_line"></div>
+    </section>
+    <section class="recommend_item container">
+      <h1>你可能也喜歡</h1>
+      <div id="owl" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="./images/item1.jpg" alt="">
+          <p>1.鹿角蕨</p>
+          <span class="price">$99</span>
+        </div>
+        <div class="item">
+          <img src="./images/item4.jpg" alt="">
+          <p>4.鹿角蕨</p>
+          <span class="price">$99</span>
+        </div>
+        <div class="item">
+          <img src="./images/item6.jpg" alt="">
+          <p>6.鹿角蕨</p>
+          <span class="price">$99</span>
+        </div>
+        <div class="item">
+          <img src="./images/item7.jpg" alt="">
+          <p>7.鹿角蕨</p>
+          <span class="price">$99</span>
+        </div>
+        <div class="item">
+          <img src="./images/item8.jpg" alt="">
+          <p>8.鹿角蕨</p>
+          <span class="price">$99</span>
+        </div>
+        <div class="item">
+          <h4>6</h4>
+        </div>
+        <div class="item">
+          <h4>7</h4>
+        </div>
+        <div class="item">
+          <h4>8</h4>
+        </div>
+        <div class="item">
+          <h4>9</h4>
+        </div>
+        <div class="item">
+          <h4>10</h4>
+        </div>
+        <div class="item">
+          <h4>11</h4>
+        </div>
+        <div class="item">
+          <img src="./images/item9.jpg" alt="">
+          <p>12.鹿角蕨</p>
+          <span class="price">$99</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <p class="socialmedia">FOLLOW US</p>
+      <p class="socilamedia_item">
+        <a href="">Facebook</a> | <a href="">Instagram </a> | <a href="">Line@</a>
+    </div>
+    <div class="footer2">
+      <div class="fadd">
+        <p class="fc"><span class="fe">ADDRES </span> | 地址</p>
+        <p class="fc">台北市信義區菸廠路88號</p>
+      </div>
+      <div class="fadd">
+        <p class="fc"><span class="fe">OPENING HOURS</span> | 營業時間</p>
+        <p class="fc">星期一休息<br>
+          星期二～四 11:00~20:00<br>
+          星期五～日 11:00~21:30</p>
+      </div>
+      <div class="fadd">
+        <p class="fc"><span class="fe">SUPPORT</span> ｜ 支援及服務</p>
+        <p class="fc">聯絡我們<br>
+          常見<span class="fe">Ｑ＆Ａ</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    });
+
+    var mainPhoto = $('#main_photo');
+    $('a.thumb_img').click(function (e) {
+      e.preventDefault();
+      console.log('觸發點擊');
+      var img = $(this).find('img');
+      console.log('宣告圖片');
+      mainPhoto.attr('src', img.data('img'));
+      console.log(img.data('img'));
+      console.log('更換圖片');
+    });
+    78
+
+    $('.gobuy').click(function () {
+      window.location.href = './checkout.html';
+      return false;
+    });
+  </script>
+
+</body>
+
+</html>

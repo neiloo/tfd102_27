@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shop_detail</title>
+
+
+
+  <!-- Bootstrap 5.0.1 的 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/common/reset.css">
+  <link rel="stylesheet" href="./css/common/all.css">
+  <link rel="stylesheet" href="./css/common/header.css">
+  <link rel="stylesheet" href="./css/common/footer.css">
+  <link rel="stylesheet" href="./css/checkout.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="">
+      <nav class="navbar">
+        <a href="./" class="logo"><img src="./images/logo.png"></a>
+        <ul class="nav_list">
+          <li>
+            <a href="./" target="">關於我們</a>
+          </li>
+          <li>
+            <a href="./shop_list.html" target="" class="-on">線上商品</a>
+          </li>
+          <li>
+            <a href="./blog.html" target="">Blog</a>
+          </li>
+          <li>
+            <a href="./gallery.html" target="">Gallery</a>
+          </li>
+          <li>
+            <a href="./contact.html" target="">聯絡我們</a>
+          </li>
+          <li class="cart">
+            <a href="./shop_list.html">
+              <img src="./images/icon_cart.png">
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row checkout">
+        <div class="col-8 offset-md-2 process">
+          <div class="step">
+            <span class="text">1</span>
+            <span clas="text">購物車</span>
+          </div>
+          <div class="step">
+            <span class="text">2</span>
+            <span clas="text">填寫資料</span>
+          </div>
+          <div class="step">
+            <span class="text">3</span>
+            <span clas="text">訂單確認</span>
+          </div>
+        </div>
+        <div class="col-12 cart-items">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="" colspan="7">購物車： 2 件商品</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">商品資料</td>
+                <td>優惠</td>
+                <td>單件價格</td>
+                <td>數量</td>
+                <td>小計</td>
+                <td class="delete"><a href="#">&times;</a></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <img src="../fernholic/images/product/product1.png" alt="">
+                  小美人魚 - 亞猴 Ｘ 圓盾
+                </td>
+                <td>購物滿兩件八折優惠</td>
+                <td>NT $2,998</td>
+                <td>1</td>
+                <td>NT $2,398</td>
+                <td class="delete"><a href="#">&times;</a></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <img src="../fernholic/images/product/product5.png" alt="">
+                  海倫仙度絲 - 波斯頓腎蕨
+                </td>
+                <td>購物滿兩件八折優惠</td>
+                <td>NT $398</td>
+                <td>2</td>
+                <td>NT $636</td>
+                <td class="delete"><a href="#">&times;</a></td>
+              </tr>
+              <tr>
+                <td colspan="7" class="keepshopping"><a href="./shop_list.html">繼續購物</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-6 order-form">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+          </form>
+        </div>
+        <div class="col-5 offset-md-1 order-summary">.col-6<br>Subsequent columns continue along the new line.</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p class="socialmedia">FOLLOW US</p>
+      <p class="socilamedia_item">
+        <a href="">Facebook</a> | <a href="">Instagram </a> | <a href="">Line@</a>
+    </div>
+    <div class="footer2">
+      <div class="fadd">
+        <p class="fc"><span class="fe">ADDRES </span> | 地址</p>
+        <p class="fc">台北市信義區菸廠路88號</p>
+      </div>
+      <div class="fadd">
+        <p class="fc"><span class="fe">OPENING HOURS</span> | 營業時間</p>
+        <p class="fc">星期一休息<br>
+          星期二～四 11:00~20:00<br>
+          星期五～日 11:00~21:30</p>
+      </div>
+      <div class="fadd">
+        <p class="fc"><span class="fe">SUPPORT</span> ｜ 支援及服務</p>
+        <p class="fc">聯絡我們<br>
+          常見<span class="fe">Ｑ＆Ａ</span></p>
+      </div>
+    </div>
+  </footer>
+  <!-- body 結束標籤之前，載入Bootstrap 的 JS 及其相依性安裝(jQuery、Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

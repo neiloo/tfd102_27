@@ -1,0 +1,82 @@
+.container img {
+    width: 100%;
+    height: 210px;
+}
+
+div.column_block {
+    /* border: 1px solid red; */
+    padding: 20px;
+    column-fill: balance;
+    column-count: 3;
+    column-gap: 30px;
+    /* height: 900px; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+div.item_info{
+    /* border: 1px solid grey; */
+    height: 11rem;
+}
+div.column_item {
+    /* border: 1px solid green; */
+    margin-bottom: 6rem;
+}
+
+
+.column_item .item_info .title, .column_item .item_info .date{
+    
+    color: #0D1C32;
+    padding: 20px 0px;
+    font-size: 1.4rem;
+}
+.column_item .item_info .title{
+    padding: 10px 0;
+    height: 7rem;
+    line-height: 2.5rem;
+    border-bottom: 1px solid #1E464A;
+}
+.column_item .item_info .date{
+    border-bottom: none;
+    padding: 10px 0px;
+}
+
+/** 分頁**/
+.pagination {
+    /* border: 1px solid green; */
+    display: inline-block;
+    font-size: 0;
+    width: 40%;
+    /* position: absolute;
+    left: 50%; */
+    margin-left: 32%;
+  }
+  
+  .pagination a {
+    color: black;
+    font-size: 1rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    border-right: 0;
+  }
+  
+  .pagination a:last-child{
+    border-right: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .pagination a:first-child{
+    display: inline-block;
+    border-radius: 5px 0 0 5px;
+  }
+  .pagination a.active {
+    background-color: #438286;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+  
