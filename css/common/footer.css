@@ -30,6 +30,8 @@ footer .footer2 {
   /* padding-bottom: 50px; */
 }
 
+
+
 .footer2 p{
   /* border: 1px solid black; */
   line-height: 2.5rem;
@@ -47,5 +49,28 @@ footer .footer2 {
   color: white;
   text-decoration: none;
   padding: 5px 10px;
+}
 
+.footer .socilamedia_item a:hover, .footer2 .fadd a:hover {
+  color: #DCAE72;
+}
+
+.footer2 .fadd a{
+  text-decoration: none;
+  color: white;
+}
+
+.claim{
+  margin-top: 3rem;
+  border: 1px solid grey;
+  color: grey;
+  text-align: center;
+  line-height: 2.5rem;;
+  padding: 2rem 0;
+}
+
+.claim a{
+  /* border: 1px solid red; */
+  text-decoration: none;
+  color: #DCAE72;
 }
