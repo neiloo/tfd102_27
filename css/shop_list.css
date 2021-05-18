@@ -76,7 +76,6 @@ section.product_list{
   /* border: 1px solid black; */
   transform:scale(1.1,1.1);
   transition:transform 0.25s ease;
-
 }
 
 .container a p.name, .container a p.price{
