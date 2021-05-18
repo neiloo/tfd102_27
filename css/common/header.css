@@ -81,6 +81,13 @@ ul.nav_list li > a:hover{
   color: #b5d9d5;
   padding-bottom: 10px;
 }
-li.cart > a > img{
+li.cart > a > .icon_cart{
+  /* border: 1px solid red; */
   width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-image: url(../../images/icon_cart.png);
+}
+li.cart > a:hover .icon_cart{
+  background-image: url(../../images/icon_cart_hover.png);
 }
