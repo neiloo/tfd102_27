@@ -92,7 +92,7 @@
 }
 
 .order-form > p, .order-form > form{
-    border: 1px solid lightgray;
+    border: 1px solid gray;
     padding: 1rem 1rem;
 }
 .cart-items th, .cart-items td{
@@ -202,7 +202,7 @@
 }
 
 .order-summary .order-summary_inner{
-    border: 1px solid black;
+    border: 1px solid grey;
 }
 
 .order-summary_inner table{
