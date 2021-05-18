@@ -3,6 +3,11 @@
     height: 210px;
 }
 
+.container img:hover {
+  transform:scale(1.05,1.05);
+  transition:transform 0.4s ease;
+}
+
 div.column_block {
     /* border: 1px solid red; */
     padding: 20px;
