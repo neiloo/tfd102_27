@@ -141,11 +141,20 @@ section.sec1{
     color: white;
     margin: 5px 0;
   }
+  .product_info div.item_block button[type="submit"]:hover{
+    background-color: #88c8c5;
+    color: #FFFFFB;
+  }
 
   .product_info div.item_block button[type="submit"].addcart{
     /* border: 1px solid black; */
     background-color: #B5D9D5;
   }
+  
+  .product_info div.item_block button[type="submit"].addcart:hover{
+    background-color: #caefeb;
+  }
+ 
 
 .lower_line{
     content: '';
