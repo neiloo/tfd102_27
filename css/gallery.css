@@ -91,14 +91,6 @@ section.kv h1{
     height: 100%;
 }
 
-.grid-item .photo a img:hover{
-  /* border: 2px solid orange; */
-  width: 100%;
-  height: 100%;
-}
-
-
-
 section.photo-list{
     width: var(--page-width);
     /* border: 1px solid red; */
