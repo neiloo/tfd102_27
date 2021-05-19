@@ -387,12 +387,15 @@ ul.activty_list li a:hover {
   background-color: rgba(255, 255, 255, 0.848);
   width: 55px;
   position: fixed;
-  bottom: 20px;
+  bottom: -95px;
   right: 0;
   z-index: 1;
   /* border: 1px solid red; */
 }
 
+.scroll_top.show img{
+  bottom: 20px;
+}
 .readmore{
   /* border: 1px solid black; */
   width: 9rem;

@@ -51,9 +51,31 @@
             <a href="./checkout.html">
               <div class="icon_cart"></div>
             </a>
-          </li>
-        </ul>
-      </nav>
+            <div class="cart_info">
+              <table>
+                <tr>
+                  <td><img src="./images/product/product1.png" alt=""></td>
+                  <td>
+                    <p>小美人魚 - 亞猴 Ｘ 圓盾</p>
+                    <p>1 X NT $2,988</p>
+                  </td>
+                  <td class="delete"><a href="#">&times;</a></td>
+                </tr>
+                <tr>
+                  <td><img src="./images/product/product5.png" alt=""></td>
+                  <td>
+                    <p>海倫仙度絲 - 波斯頓腎蕨</p>
+                    <p>2 X NT $398</p>
+                  </td>
+                  <td class="delete"><a href="#">&times;</a></td>
+                </tr>
+              </table>
+              <a href="./checkout.html">前往結賬</a>
+            </div>
+    </div>
+    </li>
+    </ul>
+    </nav>
   </header>
 
   <main class="main">
@@ -264,6 +286,41 @@
           scrollTop: 0
         }, 750);
       });
+
+      // 設定 scroll_top 距離螢幕上方 900 px 時才顯示
+
+      var $scrollTop = $("#scroll_top");
+
+
+      $scrollTop.click(function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 });
+      });
+
+      function detectScrollPosition() {
+        var scrollY = window.pageYOffset;
+
+        if (scrollY > 700) {
+          console.log($scrollTop.length);
+          // console.log('test2')
+          $scrollTop.addClass("show");
+        } else {
+          $scrollTop.removeClass("show");
+        }
+      }
+
+      var ticking = false;
+      window.addEventListener("scroll", function (e) {
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            // console.log('test1');
+            detectScrollPosition();
+            ticking = false;
+          });
+        }
+        ticking = true;
+      });
+
     });
   </script>
 </body>
