@@ -383,7 +383,7 @@ ul.activty_list li a:hover {
   background-color: #699F9C;
 }
 
-div.btn_top img{
+.scroll_top img{
   background-color: rgba(255, 255, 255, 0.848);
   width: 55px;
   position: fixed;

@@ -76,9 +76,9 @@
     </div>
 
 
-    <div class="btn_top" id="go_top">
+    <a href="#" class="scroll_top" id="scroll_top">
       <img src="./images/logo_top.png" alt="">
-    </div>
+    </a>
 
     <section class="section1">
       <div class="upper_line"></div>
@@ -238,6 +238,7 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
+    // 輪播
     var mySwiper = new Swiper(".swiper-container", {
       // 參數設定[註1]
       effect: "slide", // 效果
@@ -256,14 +257,14 @@
 
     $(function () {
       // 點擊按鈕，頁面滑到最上方
-      $("#go_top").on("click", function (e) {
+      $("#scroll_top").on("click", function (e) {
         e.preventDefault();
         $('html, body').animate({
           scrollTop: 0
         }, 750);
       });
-
     });
+
 
   </script>
 </body>
