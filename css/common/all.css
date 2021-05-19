@@ -141,21 +141,23 @@ body img{
 }
 
 .page_header.gallery{
-  border: 10px solid #1E464A;
+  /* border: 10px solid #1E464A; */
   margin: 0 auto;
-  margin-top: 80px;
-  height: 300px;
-  background-image: url(../../images/gallery_bg.jpg);
+  padding-top: 40px;
+  height: 400px;
+  /* background-image: url(../../images/gallery_bg.jpg); */
   background-color: #1E464A;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 } 
 
 .page_header.gallery .wrapper h1{
   color: white;
-  margin-top: 10rem;
+  margin-top: 25rem;
   margin-left: 10rem;
+  position: absolute;
+  
 }
 
 .photo_list p {
@@ -176,6 +178,15 @@ body img{
   height: 300px;
   position: absolute;
   right: 20%;
+}
+
+.page_header.gallery .wrapper img{
+  /* border: 1px solid red; */
+  min-width: 1200px;
+  height: 300px;
+  top: 12%;
+  position: absolute;
+  right: 0;
 }
 
 
