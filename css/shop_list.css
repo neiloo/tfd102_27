@@ -95,6 +95,12 @@ section.product_list{
   bottom: 7rem;
 
   border: 1px solid #dae7e9;
+  /* box-shadow: 4px 4px #1E464A; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  /* box-shadow: 60px -16px teal; */
+  /* box-shadow: inset 5em 1em #1E464A; */
+  /* box-shadow: inset 0 0 1em gold; */
+  /* box-shadow: inset 0 0 1em gold, 0 0 1em red; */
   /* border-radius: 50%; */
 }
 .container a p.name, .container a p.price{
