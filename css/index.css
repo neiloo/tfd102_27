@@ -270,12 +270,12 @@ div.column_block {
 div.item_info{
   /* border: 1px solid grey; */
   background-color: white;
-  height: 20rem;
+  height: 21rem;
   padding: 10px 15px;
 }
 div.column_item {
   /* border: 1px solid green; */
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 
 .blog h1{
@@ -286,6 +286,21 @@ div.column_item {
 
   padding: 0 10px;
   color:#0D1C32;
+}
+
+.blog p{
+  line-height: 2.5rem;
+}
+.blogger .item_info a{
+  text-decoration: none;
+  color: #0D1C32;
+}
+.blogger .item_info a:hover{
+  text-decoration: none;
+  color: white;
+  background: #1E464A;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid black;
 }
 
 .column_item .item_info .title, .column_item .item_info p{
@@ -314,6 +329,7 @@ div.column_item {
   min-width: 600px;
   height: 600px;
   margin: 0 auto;
+  margin-top: 15rem;
   position: relative;
 }
 
