@@ -76,8 +76,27 @@ section.product_list{
   /* border: 1px solid black; */
   transform:scale(1.1,1.1);
   transition:transform 0.25s ease;
+
 }
 
+.product{
+  position: relative;
+}
+.product::before{
+  content: '';
+  display: block;
+  position: absolute;
+  border: 1px solid black;
+  width: 180px;
+  height: 220px;
+  background-color: lightgrey;
+  z-index: -1;
+  right: 7rem;
+  bottom: 7rem;
+
+  border: 1px solid #dae7e9;
+  /* border-radius: 50%; */
+}
 .container a p.name, .container a p.price{
     font-size: 1.6rem;
     font-weight: bold;
