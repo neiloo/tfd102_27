@@ -31,6 +31,10 @@ body img{
     margin-top: 80px;
 }
 
+.banner .container.index_banner{
+    margin-top: 0;
+}
+
 /* Banner*/
 .page_header{
   /* border: 1px solid black; */
