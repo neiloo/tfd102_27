@@ -38,9 +38,9 @@ section.kv h1{
 
 .grid-item .photo a:hover .cover{
   display: flex;
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  display: block;
+  display: block; */
 }
 .grid-item .photo .cover img{
   width: 2rem;
