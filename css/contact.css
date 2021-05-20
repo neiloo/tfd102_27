@@ -158,7 +158,7 @@ div.column_item {
   /* border: 1px solid black; */
   height: 700px;
   /* background-image: url(./../images/leaf-rmbg.png), linear-gradient(white, #B5D9D5); */
-  background-image: linear-gradient(white, white, #B5D9D5, #1E464A);
+  /* background-image: linear-gradient(white, white, #B5D9D5, #1E464A); */
   background-repeat: no-repeat, no-repeat;
   /* background-size: ; */
   background-position: bottom left;
@@ -194,13 +194,13 @@ section.sec_form h1.title1{
   padding: 0 10px;
   color: #0D1C32;
   /* text-align: center; */
-  margin: 5rem 0 50px 7rem;
+  margin: 0 0 50px 7rem;
   /* border: 1px solid red; */
 }
 section.sec_form form.q_form{
   /* border: 1px solid gray; */
   margin:  0 auto;
-  padding: 1rem 4rem 0 0;;
+  padding: 1rem 0 0 7rem;
 }
 section.sec_form form.q_form div.item_block{
   display: flex;
@@ -212,7 +212,7 @@ section.sec_form form.q_form div.item_block label{
   display: inline-block;
   vertical-align: middle;
   flex-basis: 100px;
-  text-align: right;
+  text-align: left;
   /* border: 1px solid orange; */
 }
 section.sec_form form.q_form div.item_block input,
