@@ -89,7 +89,7 @@ ul.nav_list li > a:hover{
 li.cart > a > .icon_cart{
   /* border: 1px solid red; */
   width: 23px;
-  height: 20px;
+  height: 21px;
   background-size: cover;
   background-image: url(../../images/icon_cart.png);
 }
