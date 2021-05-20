@@ -10,7 +10,7 @@ main {
 }
 
 .grid-item .photo .cover{
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ main {
   height: 100%;
   position: absolute;
   top: 0;
-  background-color: #34534e99;
+  background-color: rgba(85, 80, 80, 0.327);
   display: none;
 }
 
