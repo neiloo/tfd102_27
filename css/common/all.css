@@ -99,7 +99,9 @@ body img{
 
 .page_header.blog .img{
   /* border: 1px solid red; */
-  background-image: url(../../images/blog/blog_kv.jpg);
+  /* background-image: url(../../images/bg.jpeg); */
+    background-image: url(../../images/blogger/blog_bg.jpg);
+
   height: 200px;
   width: 80%;
   margin: 10px auto;
