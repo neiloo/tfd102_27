@@ -503,7 +503,7 @@ ul.activty_list li a:hover {
   color: gray;
 }
 
-.readmore:hover{
+.activity .readmore:hover{
   text-decoration: none;
   color: white;
   background: #1E464A;
