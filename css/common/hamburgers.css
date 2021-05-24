@@ -6,9 +6,8 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
-  /* border: 1px solid blue; */
   padding: 15px 15px;
-  display: inline-block;
+  display: none;
   cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -30,10 +29,14 @@
     background-color: #000; }
 
 .hamburger-box {
+  /* border: 10px solid white; */
   width: 40px;
   height: 24px;
   display: inline-block;
-  position: relative; }
+  position: relative; 
+  right: -1%;;
+  top: -150%;
+}
 
 .hamburger-inner {
   display: block;
@@ -42,7 +45,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #000;
+    background-color: white;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -533,6 +536,7 @@
    * Spring
    */
 .hamburger--spring .hamburger-inner {
+  color: white;
   top: 2px;
   transition: background-color 0s 0.13s linear; }
   .hamburger--spring .hamburger-inner::before {
