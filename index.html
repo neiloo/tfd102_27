@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="./css/common/all.css">
   <link rel="stylesheet" href="./css/common/header.css">
   <link rel="stylesheet" href="./css/common/footer.css">
-
+  <link rel="stylesheet" href="./css/common/hamburgers.css">
 
 </head>
 
@@ -74,6 +74,11 @@
             </div>
           </li>
         </ul>
+        <button class="hamburger hamburger--spring" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </nav>
   </header>
 
@@ -379,6 +384,10 @@
         ticking = true;
       });
 
+      // hamburger icon 的切換
+      $("button.hamburger").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
     });
   </script>
 </body>
