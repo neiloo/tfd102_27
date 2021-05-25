@@ -1,3 +1,7 @@
+img{
+  max-width: 100%;
+}
+
 header.header{
   /* border: 1px solid yellow; */
   width: 100%;
@@ -34,10 +38,72 @@ header.header{
 }
 /** 導覽列 **/
 
-button.hamburger{
-  border: 1px solid white;
-  display: block;
-  
+.hamburger {
+  /* border: 4px solid red; */
+  width: 50px;
+  display: none;
+  position: relative;
+  right: 2%;
+  top: 10%;
+}
+.hamburger-inner {
+  /* border: 4px solid red; */
+  background-color: #DCAE72;
+  /* display: none; */
+  /* top: -200%; */
+  /* right: 300%; */
+  /* margin-top: -15px; */
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: #DCAE72;
+}
+
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #DCAE72; }
+
+
+
+@media screen and (max-width: 575px){
+  header.header{
+    width: 100%;
+  }
+  header.header ul{
+    display: none;
+  }
+  .hamburger{
+    /* border: 3px solid red; */
+    width: 50px;
+    display: inline-block;
+    right: 55%;
+    top: 10%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+  header.header{
+    width: 540px;
+  }
+  header.header ul{
+    display: none;
+  }
+  .hamburger{
+    /* border: 3px solid red; */
+    width: 50px;
+    display: inline-block;
+    right: 40%;
+    top: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  header.header{
+    width: 720px;
+  }
+  .hamburger {
+    display: inline-block;
+  }
 }
 
 div.block nav.nav{
@@ -68,11 +134,28 @@ ul.nav_list{
   /* border: 1px solid red; */
   margin-right: 50px;
   width: 700px;
-  min-width: 00px;
+  min-width: 600px;
   display: flex;
   list-style: none;
   justify-content: space-around;
   /* align-content: center; */
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  header.header{
+    width: 720px;
+  }
+  ul.nav_list{
+    /* border: 2px solid white; */
+    width: 500px;
+    margin-right: 250px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  header.header{
+    width: 960px;
+  }
 }
 
 ul.nav_list li > a{
@@ -197,44 +280,4 @@ color: grey;
   background-color: #b5d9d5;
   font-weight: bold;
   font-size: 1.6rem;
-}
-
-img{
-  max-width: 100%;
-}
-
-@media screen and (max-width: 575px){
-  header.header{
-    display: 100%;
-  }
-  header.header ul{
-    display: none;
-  }
-  button.hamburger{
-    display: block !important;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px){
-  header.header{
-    width: 540px;
-  }
-  header.header ul{
-    display: none;
-  }
-  button.hamburger{
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px){
-  header.header{
-    width: 720px;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px){
-  header.header{
-    width: 960px;
-  }
 }
