@@ -253,14 +253,14 @@ a.inner_block:hover button {
 
 }
 div.column_block {
-  /* border: 1px solid red; */
+  /* border: 2px solid red; */
   padding: 20px;
   column-fill: balance;
   column-count: 3;
   column-gap: 30px;
   height: 60rem;
   background-image: url(../images/contact_bg.jpeg);
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 4rem;
   margin-bottom: 8rem;

@@ -1,5 +1,5 @@
 header.header{
-  /* border: 1px solid black; */
+  /* border: 1px solid yellow; */
   width: 100%;
   /* background-color: var(--bg-color); */
   min-width: var(--page-width);
@@ -32,11 +32,12 @@ header.header{
 .navbar .logo img{
   height: 100%;
 }
-/* 導覽列 */
+/** 導覽列 **/
 
-button .hamburger{
+button.hamburger{
   border: 1px solid white;
   display: block;
+  
 }
 
 div.block nav.nav{
@@ -100,7 +101,7 @@ ul.nav_list li > a:hover{
 
 
 li.cart > a > .icon_cart{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 23px;
   height: 21px;
   background-size: cover;
@@ -198,6 +199,42 @@ color: grey;
   font-size: 1.6rem;
 }
 
+img{
+  max-width: 100%;
+}
 
+@media screen and (max-width: 575px){
+  header.header{
+    display: 100%;
+  }
+  header.header ul{
+    display: none;
+  }
+  button.hamburger{
+    display: block !important;
+  }
+}
 
+@media screen and (min-width: 576px) and (max-width: 767px){
+  header.header{
+    width: 540px;
+  }
+  header.header ul{
+    display: none;
+  }
+  button.hamburger{
+    display: block;
+  }
+}
 
+@media screen and (min-width: 768px) and (max-width: 991px){
+  header.header{
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  header.header{
+    width: 960px;
+  }
+}
