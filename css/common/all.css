@@ -7,6 +7,13 @@ html{
   --page-width: 1200px;
   --bg-color: #1E464A;
 }
+
+@media (max-width: 1199px) {
+  html {
+    --page-width: 100%;
+  }
+}
+
 body{
   width: 100%;
   margin: 0 auto;

@@ -42,7 +42,7 @@ header.header{
   /* border: 4px solid red; */
   width: 50px;
   display: none;
-  position: relative;
+  position: absolute;
   right: 2%;
   top: 10%;
 }
@@ -65,23 +65,46 @@ header.header{
 
 
 
-@media screen and (max-width: 575px){
+@media (max-width: 768px){
   header.header{
     width: 100%;
   }
   header.header ul{
     display: none;
+    width: 100%;
+    /* height: calc(100vh - 8rem); */
+    background-color: #1E464A;
+    min-width: auto;
+    margin-right: 0;
+    margin-top: 8rem;
+    position: absolute;
+    top: 0;
+    /* transition: all 1s ease-out 1s; */
+    height: 0;
   }
   .hamburger{
     /* border: 3px solid red; */
     width: 50px;
     display: inline-block;
-    right: 55%;
-    top: 10%;
+    right: 8%;
+    top: 15%;
+  }
+
+  header.show-nav ul{
+    display: block;
+    height: auto;
+  }
+  header.show-nav ul li{
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 25px 0;
+  }
+  header.show-nav ul li.cart a{
+    display: inline-block;
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px){
+/* @media screen and (min-width: 576px) and (max-width: 767px){
   header.header{
     width: 540px;
   }
@@ -89,22 +112,22 @@ header.header{
     display: none;
   }
   .hamburger{
-    /* border: 3px solid red; */
+    border: 3px solid red;
     width: 50px;
     display: inline-block;
     right: 40%;
     top: 10%;
   }
-}
+} */
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+/* @media screen and (min-width: 768px) and (max-width: 991px){
   header.header{
     width: 720px;
   }
   .hamburger {
     display: inline-block;
   }
-}
+} */
 
 div.block nav.nav{
   display: flex;
@@ -141,22 +164,19 @@ ul.nav_list{
   /* align-content: center; */
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px){
+/* @media screen and (min-width: 768px) and (max-width: 991px){
   header.header{
     width: 720px;
   }
   ul.nav_list{
-    /* border: 2px solid white; */
+    border: 2px solid white;
     width: 500px;
     margin-right: 250px;
   }
-}
+} */
 
-@media screen and (min-width: 992px) and (max-width: 1199px){
-  header.header{
-    width: 960px;
-  }
-}
+/* @media (min-width: 1199px){
+} */
 
 ul.nav_list li > a{
   /* border: 1px solid black; */

@@ -1,6 +1,11 @@
 /* verson 0512 */
 /* --- banner 區塊 --- */
 
+/* .main, footer {
+  display: none;
+} */
+
+
 .banner {
   width: 100%;
   height: 100vh;
