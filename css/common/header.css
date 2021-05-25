@@ -33,6 +33,12 @@ header.header{
   height: 100%;
 }
 /* 導覽列 */
+
+button .hamburger{
+  border: 1px solid white;
+  display: block;
+}
+
 div.block nav.nav{
   display: flex;
   /* border: 1px solid blue; */
@@ -86,8 +92,15 @@ ul.nav_list li > a:hover{
   /* border: 2px solid white; */
   position: relative;
 }
+/* li.cart > a{
+  border: 1px solid white;
+  display: inline-block;
+  padding: 20px;
+} */
+
+
 li.cart > a > .icon_cart{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 23px;
   height: 21px;
   background-size: cover;

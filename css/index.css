@@ -230,12 +230,12 @@ a.inner_block:hover button {
 
 
 /** blog **/
-.container .blog{
-  /* border: 1px solid red; */
-  height: 600px;
-  background: linear-gradient(#1E464A, white);
-  padding: 4rem 2rem;
-  /* margin-top: 6rem; */
+.blog .container {
+  /* border: 1px solid blue; */
+  height: 70rem;
+  /* background: linear-gradient(#1E464A, white); */
+  /* padding: 4rem 2rem; */
+  margin-top: 3rem;
 }
 .container .blogger img {
   margin-top: 20px;
@@ -262,7 +262,7 @@ div.column_block {
   background-image: url(../images/contact_bg.jpeg);
   width: 90%;
   margin: 0 auto;
-  margin-top: 8rem;
+  margin-top: 4rem;
   margin-bottom: 8rem;
   padding: 2rem 4rem;
 }
@@ -329,7 +329,7 @@ div.column_item {
   min-width: 600px;
   height: 600px;
   margin: 0 auto;
-  margin-top: 15rem;
+  /* margin-top: 2rem; */
   position: relative;
 }
 
