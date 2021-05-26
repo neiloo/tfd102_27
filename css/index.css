@@ -237,7 +237,7 @@ div.banner_img::before {
   box-shadow: 1px 1px 5px 2px lightgray;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .inner_block {
     /* border: 3px solid red; */
     width: 200px;
