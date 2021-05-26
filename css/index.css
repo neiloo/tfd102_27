@@ -1,9 +1,7 @@
-/* --- banner 區塊 --- */
-
+/*===== banner 區塊 =====*/
 .main, footer {
   display: none;
 }
-
 
 .banner {
   width: 100%;
@@ -15,8 +13,6 @@
   /* border:1px solid red; */
 }
 
-
-
 .banner_img img,
 .mist img {
   /* border: 1px solid white; */
@@ -27,8 +23,6 @@
   bottom: calc((100% - 450px) / 2 - 10px);
   z-index: 0;
 }
-
-
 
 .mist img {
   z-index: 1;
@@ -98,7 +92,7 @@ div.banner_img::before {
   }
 }
 
-/* --- section1 --- */
+/*===== section1 =====*/
 
 .section1 {
   /* border: 1px solid blue; */
@@ -235,7 +229,7 @@ a.inner_block:hover button {
 }
 
 
-/** blog **/
+/*===== blog  =====*/
 .blog .container {
   /* border: 1px solid blue; */
   height: 70rem;
@@ -327,7 +321,7 @@ div.column_item {
   /* margin-top: 10px; */
   border-bottom: none;
 }
-/* --- section2 --- */
+/*===== section2 =====*/
 .section2 {
   /* border: 1px solid black; */
   background-image: linear-gradient(220deg, white 1200px, #1E464A 20px);
@@ -418,7 +412,7 @@ div.column_item {
   z-index: 0;
 }
 
-/* --- section3 --- */
+/*=====* section3 =====**/
 .section3 {
   /* border: 1px solid black; */
   width: var(--page-width);
@@ -516,7 +510,7 @@ ul.activty_list li a:hover {
   padding: 0.5rem 0.5rem;
   /* border: 1px solid black; */
 }
-/* --- section4 ---  */
+/*====== section4 ======*/
 .section4{
   /* border: 1px solid black; */
   margin: 20px auto;
