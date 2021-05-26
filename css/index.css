@@ -72,13 +72,15 @@ div.banner_img::before {
   /* animation-timing-function: cubic-bezier(1, 0.03, 0.685, 0.22); */
 }
 
+
+
 @keyframes scrolldown {
   0% {
-    transform: translateY(80px);
+    transform: translateY(250%);
   }
 
   100% {
-    transform: translateY(110px);
+    transform: translateY(420%);
   }
 }
 
