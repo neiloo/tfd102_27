@@ -1,5 +1,5 @@
 /*===== banner 區塊 =====*/
-.main .scroll_top, .main .section2, .main .section3, .main .section4, footer {
+.main .scroll_top, .main .blog, .main .section2, .main .section3, .main .section4, footer {
   display: none;
 }
 
@@ -160,8 +160,9 @@ div.banner_img::before {
 }
 @media (max-width: 768px) {
   .section1 {
-    /* border: 1px solid red; */
+    /* border: 5px solid red; */
     width: 100vw;
+    margin: 0;
   }
 }
 
@@ -239,8 +240,9 @@ div.banner_img::before {
 @media (max-width: 768px) {
   .inner_block {
     /* border: 3px solid red; */
-    width: 350px;
-    height: 480px;
+    width: 200px;
+    height: 350px;
+    padding: 2rem;
   }
 }
 
@@ -305,7 +307,12 @@ a.inner_block:hover button {
   font-size: 2rem;
   color: white;
 }
-
+@media (max-width: 768px) {
+  .inner_block h1 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
 .inner_block h3 {
   font-size: 1.4rem;
   color: lightgray;
@@ -313,6 +320,12 @@ a.inner_block:hover button {
   position: relative;
   top: 30px;
   line-height: 2.5rem;
+}
+@media (max-width: 768px) {
+  .inner_block h3 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 }
 
 .inner_block .price_block {
