@@ -1,5 +1,5 @@
 /*===== banner 區塊 =====*/
-.main .scroll_top, .main .blog, .main .section2, .main .section3, .main .section4, footer {
+.main .scroll_top, .main .section2, .main .section3, .main .section4, footer {
   display: none;
 }
 
@@ -338,6 +338,14 @@ a.inner_block:hover button {
   /* padding: 4rem 2rem; */
   margin-top: 3rem;
 }
+
+@media (max-width: 768px) {
+  .blog .container {
+    border: 3px solid red;
+    margin-top: 2rem;
+  }
+}
+
 .container .blogger img {
   margin-top: 20px;
   border: 2px solid #1E464A;
@@ -382,7 +390,8 @@ div.column_item {
 .blog h1{
   font-size: 3rem;
   border-left: 10px solid #DCAE72;
-  margin-left: 45% ;
+  margin-left: 44% ;
+  font-weight: bold;
   /* margin: 0 auto; */
 
   padding: 0 10px;
