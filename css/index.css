@@ -1,5 +1,5 @@
 /*===== banner 區塊 =====*/
-.main, footer {
+.main .scroll_top, .main .section1, .main .blog, .main .section2, .main .section3, .main .section4, footer {
   display: none;
 }
 
@@ -11,6 +11,13 @@
   background-repeat: no-repeat;
   position: relative;
   /* border:1px solid red; */
+}
+
+@media (max-width: 768px) {
+  .banner {
+      /* border:1px solid red; */
+      height: 80vh;
+  }
 }
 
 .banner_img img,
@@ -46,14 +53,46 @@ div.banner_img::before {
   z-index: 2;
 }
 
+@media (max-width: 768px) {
+  .banner_img img,
+  .mist img {
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 45%;
+    right: 10%;
+    top: 30%;
+  }
+
+  div.banner_img::before {
+    width: 80%;
+    height: 45%;
+    right: 8%;
+    top: 28%;
+  }
+}
+
 .banner p {
+  /* border: 1px solid red; */
   font-size: 1.4rem;
-  width: 30%;
+  width: 32%;
   color: white;
   line-height: 25px;
   position: absolute;
   left: 50%;
   bottom: 35%;
+}
+
+@media (max-width: 768px) {
+  .banner p {
+    font-size: 1.4rem;
+    width: 50%;
+    color: white;
+    line-height: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40%;
+  }
 }
 
 .scroll img {
@@ -83,6 +122,19 @@ div.banner_img::before {
     transform: translateY(420%);
   }
 }
+
+@media (max-width: 768px) {
+  @keyframes scrolldown {
+    0% {
+      transform: translateY(200%);
+    }
+  
+    100% {
+      transform: translateY(350%);
+    }
+  }
+}
+
 
 @keyframes transparent {
   0% {
