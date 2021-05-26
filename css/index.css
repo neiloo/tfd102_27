@@ -115,11 +115,11 @@ div.banner_img::before {
 
 @keyframes scrolldown {
   0% {
-    transform: translateY(250%);
+    transform: translateY(80px);
   }
 
   100% {
-    transform: translateY(420%);
+    transform: translateY(110px);
   }
 }
 
