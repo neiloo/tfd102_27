@@ -75,7 +75,7 @@ header.header{
     margin-top: 8rem;
     position: absolute;
     top: 0;
-    /* transition: all 1s ease-out 1s; */
+    transition: all 1s ease-out 1s;
     height: 0;
   }
   .hamburger{
@@ -192,12 +192,17 @@ ul.nav_list li > a:hover{
   /* border: 2px solid white; */
   position: relative;
 }
-/* li.cart > a{
-  border: 1px solid white;
-  display: inline-block;
-  padding: 20px;
-} */
 
+li.cart::before{
+  width: 10rem;
+  height: 10rem;
+  content: '';
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  display: block;
+}
 
 li.cart > a > .icon_cart{
   /* border: 1px solid red; */
@@ -218,7 +223,9 @@ li.cart > a:hover .icon_cart{
   background-color: white;
   border: 1px solid grey;
   width: 28rem;
-  right: -28rem;
+  right: 0;
+  /* right: -28rem; */
+  transform: translateX(100%);
   top: 5rem; 
   padding: 0 2rem;
   font-size: 1.2rem;
@@ -226,13 +233,15 @@ li.cart > a:hover .icon_cart{
   /* 處理滑進滑出 */
   opacity: 0;
   z-index: -1;
-  transition: opacity 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  pointer-events: none;
 }
 
-li.cart > a:hover + .cart_info{
-  width: 28rem;
-  right: -1rem;
+li.cart:hover  .cart_info{
+
+  transform: none;
   opacity: 1;
+  pointer-events: auto;
  
 }
 
