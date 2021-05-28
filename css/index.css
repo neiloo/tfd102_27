@@ -164,6 +164,11 @@ div.banner_img::before {
   margin-top: 30px;
   position: relative;
 }
+@media (max-width: 576px) {
+  .section1 {
+    height: 50rem;
+  }
+}
 @media (max-width: 768px) {
   .section1 {
     /* border: 5px solid red; */
