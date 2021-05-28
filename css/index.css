@@ -381,7 +381,7 @@ a.inner_block:hover button {
 }
 @media (max-width: 576px) {
   .blog{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     /* height: 152rem; */
   }
 }
