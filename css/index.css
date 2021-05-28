@@ -1,5 +1,5 @@
 /*===== banner 區塊 =====*/
-.main .scroll_top, .main .section2, .main .section3, .main .section4, footer {
+.main .scroll_top, .main .section3, .main .section4, footer {
   display: none;
 }
 
@@ -569,7 +569,7 @@ position: relative;
     overflow: hidden;
   }
 }
-@media (max-width: 678px){
+@media (max-width: 768px){
   .blog .item_info p{
     /* border: 3px solid red; */
     margin-top: 2rem;
@@ -582,13 +582,22 @@ position: relative;
   /* border: 1px solid black; */
   background-image: linear-gradient(220deg, white 1200px, #1E464A 20px);
   width: var(--page-width);
-  min-width: 600px;
+  /* min-width: 600px; */
   height: 600px;
   margin: 0 auto;
   /* margin-top: 2rem; */
   position: relative;
+  margin-top: 8rem;
+}
+@media (max-width: 576px){
+  .section2 {
+    /* border: 3px solid red; */
+    margin-top: 10rem;;
+    height: 100%;
+  }
 }
 
+/* 標題 */
 .section2 h1 {
   border-left: 10px solid #DCAE72;
   margin: 0;
@@ -597,6 +606,13 @@ position: relative;
   right: 10%;
   font-size: 3rem;
   color: #0F254D;
+}
+@media (max-width: 576px){
+  .section2 h1 {
+    right: 50%;
+    transform: translateX(50%);
+    top: -10%;
+  }
 }
 
 .section2 .img_block {
@@ -607,9 +623,18 @@ position: relative;
   left: calc(100% - 65% - 10%);
   top: 15%;
 }
+@media (max-width: 576px){
+  .section2 .img_block {
+    /* border: 3px solid green; */
+    width: 100vw;
+    height: 80vh;
+    left: 0;
+  }
+}
 
+/* 背景 */
 .section2 .section2_bg {
-  /* border: 1px solid purple; */
+  /* border: 3px solid purple; */
   width: 100%;
   height: 100%;
   background-image: url("../images/gallery_kv.jpeg");
@@ -619,9 +644,22 @@ position: relative;
   opacity: .4;
   z-index: 0;
 }
+@media (max-width: 768px){
+  .section2 .section2_bg {
+    /* border: 3px solid red; */
+    width: 70vw;
+  }
+}
 
+@media (max-width: 576px){
+  .section2 .section2_bg {
+    width: 100%;
+  }
+}
+
+/* 右邊區塊 */
 .section2 .img_block .right_img {
-  /* border: 1px solid black; */
+  /* border: 1px solid red; */
   width: 500px;
   height: 320px;
   padding: 20px;
@@ -630,6 +668,22 @@ position: relative;
   top: calc((100% - 320px) / 2);
   background-image: linear-gradient(100deg, #1E464A 0px, #0F254D 0px);
   z-index: 0;
+}
+@media (max-width: 768px){
+  .section2 .img_block .right_img {
+    width: 90%;
+    height: 80% ;
+    right: -2%;
+    top: 10%;
+  }
+}
+@media (max-width: 576px){
+  .section2 .img_block .right_img {
+    width: 80%;
+    height: 90% ;
+    right: 10%;
+    top: 5%;
+  }
 }
 
 .section2 .img_block .right_img::after {
@@ -641,6 +695,24 @@ position: relative;
   right: calc((100% - 450px) / 2 - 10px);
   bottom: 17px;
   z-index: 0;
+}
+@media (min-width:576px) and (max-width: 768px){
+  .section2 .img_block .right_img::after {
+    width: 80%;
+    height: 80% ;
+    right: 10%;
+    top: 10%;
+  }
+}
+@media (max-width: 576px){
+  .section2 .img_block .right_img::after {
+    /* display: none; */
+    width: 90%;
+    height: 35%;
+    /* padding-top: 12%; */
+    right: 5%;
+    bottom: 5%;
+  }
 }
 
 .img_block p {
@@ -654,7 +726,28 @@ position: relative;
   line-height: 3.5rem;
   z-index: 1;
 }
+@media (max-width: 768px){
+  .img_block p {
+    font-size: 1.6rem;
+    width: 65%;
+    left: 28%;
+    top: 30%;
+    line-height: 3.5rem;
+    z-index: 1;
+  }
+}
+@media (max-width: 576px){
+  .img_block p {
+    font-size: 1.2rem;
+    width: 65%;
+    left: 17%;
+    top: 60%;
+    line-height: 2.5rem;
+    z-index: 1;
+  }
+}
 
+/* 左邊區塊 */
 .img_block .left_img {
   /* border: 1px solid red; */
   width: 40%;
@@ -666,6 +759,27 @@ position: relative;
   bottom: 35%;
   box-shadow: 1px 1px 8px 0.5px rgb(171, 171, 171, .6);
   z-index: 0;
+}
+@media (max-width: 768px){
+  .img_block .left_img {
+    height: 70%;
+    right: 90%;
+    bottom: 40%;
+  }
+}
+@media (max-width: 576px){
+  .img_block .left_img {
+    width: 100%;
+    height: 0;
+    padding-top: 60%;
+    background-position: center bottom;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: 48%;
+    box-shadow: none;
+    z-index: 1;
+  }
 }
 
 /*=====* section3 =====**/
