@@ -1,9 +1,14 @@
+section.product_list {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
-html{
-  font-size: 10px; 
-  font-family: '思源黑體','Arial';
+
+html {
+  font-size: 10px;
+  font-family: '思源黑體', 'Arial';
   --page-width: 1200px;
   --bg-color: #1E464A;
 }
@@ -14,16 +19,16 @@ html{
   }
 }
 
-body{
+body {
   width: 100%;
   margin: 0 auto;
 }
 
-body img{
+body img {
   max-width: 100%;
 }
 
-.container{
+.container {
   /* border: 1px solid red; */
   margin: 0 auto;
   max-width: 1200px;
@@ -31,35 +36,49 @@ body img{
   position: relative;
 }
 
-.banner .container{
-    /* border: 1px solid white; */
-    height: 100%;
-    min-width: 100%;
-    margin-top: 80px;
+.banner .container {
+  /* border: 1px solid white; */
+  height: 100%;
+  min-width: 100%;
+  margin-top: 80px;
 }
 
-.banner .container.index_banner{
-    margin-top: 0;
+.banner .container.index_banner {
+  margin-top: 0;
 }
 
 /* Banner*/
-.page_header{
+.page_header {
   /* border: 1px solid black; */
   padding-top: 80px;
   height: 400px;
   background-image: url(../../images/shoplist_bg.jpg);
   background-size: cover;
 }
+/* 線上商品頁 banner */
+@media (max-width: 768px) {
+  .page_header.shop{
+    /* border: 2px solid red; */
+    height: 40vh;
+  } 
+}
+@media (max-width: 576px) {
+  .page_header.shop{
+    /* border: 2px solid red; */
+    height: 40vh;
+  } 
+}
 
-.page_header.contact{
+.page_header.contact {
   /* border: 1px solid black; */
   /* background-color: #1E464A; */
   background-image: linear-gradient(100deg, #1E464A 50%, #0D1C32 50%);
   margin: auto;
   background-size: contain;
-} 
+}
 
-.page_header .wrapper{
+/* 線上商品頁 banner 區塊*/
+.page_header .wrapper {
   /* border: 1px solid white; */
   width: 100%;
   margin: 0 auto;
@@ -69,14 +88,14 @@ body img{
   padding: 9px 0;
 }
 
-.page_header .wrapper img{
+.page_header .wrapper img {
   width: 600px;
   height: 300px;
   position: absolute;
   right: 20%;
 }
 
-.page_header.contact .wrapper .img{
+.page_header.contact .wrapper .img {
   /* border: 1px solid red; */
   width: 900px;
   right: 10rem;
@@ -85,36 +104,55 @@ body img{
   background-size: cover;
 }
 
-.page_header .wrapper .img{
+.page_header .wrapper .img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.page_header .wrapper h1{
+.page_header .wrapper h1 {
   color: white;
   font-size: 3rem;
 }
 
-.page_header.shop .img{
+/* 線上商品頁 banner 圖 */
+.page_header.shop .img {
   width: 600px;
   height: 300px;
   background-image: url(../../images/shoplist_bg2.jpeg);
   position: absolute;
   right: 20%;
 }
+@media (max-width: 768px) {
+  .page_header.shop .img {
+    /* border: 2px solid blue; */
+    width: 90%;
+    height: 70%;
+    right: 5%;
+    bottom: 20%;
+  }
+}
+@media (max-width: 576px) {
+  .page_header.shop .img {
+    /* border: 2px solid blue; */
+    width: 90%;
+    height: 70%;
+    right: 5%;
+    bottom: 20%;
+  }
+}
 
-.page_header.blog .img{
+.page_header.blog .img {
   /* border: 1px solid red; */
   /* background-image: url(../../images/bg.jpeg); */
-    background-image: url(../../images/blogger/blog_bg.jpg);
+  background-image: url(../../images/blogger/blog_bg.jpg);
 
   height: 200px;
   width: 80%;
   margin: 10px auto;
 }
 
-.page_header.contact .img{
+.page_header.contact .img {
   width: 600px;
   height: 300px;
   background-image: url(../../images/contact_bg.jpg);
@@ -122,34 +160,51 @@ body img{
   right: 20%;
 }
 
-.page_header.blog .wrapper_info{
+.page_header.blog .wrapper_info {
   /* border: 1px solid blue; */
   width: 80%;
   margin: 20px auto 0;
 }
 
-.page_header.blog .wrapper_info p{
+.page_header.blog .wrapper_info p {
   font-size: 1.4rem;
 }
 
-.page_header.shop h1, .page_header.contact h1{
+.page_header.shop h1,
+.page_header.contact h1 {
   position: absolute;
   left: 5%;
   bottom: 15%;
 }
+/* 線上商品頁 banner h1 */
+@media (max-width: 768px){
+  .page_header.shop h1{
+    /* border: 2px solid yellow; */
+    bottom: 6%;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px){
+  .page_header.shop h1{
+    /* border: 2px solid yellow; */
+    bottom: 6%;
+    font-size: 2rem;
+  }
+}
 
-.page_header.blog p, .page_header.blog h1{
+.page_header.blog p,
+.page_header.blog h1 {
   display: inline-block;
   vertical-align: top;
 }
 
-.page_header.blog p{
+.page_header.blog p {
   margin-left: 20px;
   color: white;
   line-height: 2;
 }
 
-.page_header.gallery{
+.page_header.gallery {
   /* border: 10px solid #1E464A; */
   margin: 0 auto;
   padding-top: 40px;
@@ -159,37 +214,37 @@ body img{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-} 
+}
 
-.page_header.gallery .wrapper h1{
+.page_header.gallery .wrapper h1 {
   color: white;
   margin-top: 25rem;
   margin-left: 10rem;
   position: absolute;
-  
+
 }
 
 .photo_list p {
   /* border: 1px solid blue; */
   text-align: center;
   font-size: 1.4rem;
-  padding-top: 4rem; 
+  padding-top: 4rem;
 }
 
-.photo_list p a{
+.photo_list p a {
   color: #DCAE72;
   text-decoration: none;
 }
 
-.page_header.contact .wrapper img{
-  border: 1px solid red;
+.page_header.contact .wrapper img {
+  /* border: 1px solid red; */
   width: 900px;
   height: 300px;
   position: absolute;
   right: 20%;
 }
 
-.page_header.gallery .wrapper img{
+.page_header.gallery .wrapper img {
   /* border: 1px solid red; */
   min-width: 1200px;
   height: 300px;
@@ -204,7 +259,8 @@ body img{
   display: flex;
   /* justify-content: space-around; */
   flex-wrap: wrap;
-  margin-top: 80px;;
+  margin-top: 80px;
+  ;
   width: 100%;
 }
 
@@ -218,40 +274,39 @@ body img{
   margin-left: auto;
 }
 
-.list-item{
+.list-item {
   width: 200px;
   font-size: 1.6rem;
   text-align: center;
-  margin-bottom: 8rem; 
+  margin-bottom: 8rem;
 }
 
-.list-block.article .list-item{
-border: 1px solid blue;
-background-color: aquamarine;
+.list-block.article .list-item {
+  /* border: 1px solid blue; */
+  background-color: aquamarine;
 }
 
-.list-item img{
+.list-item img {
   width: 100%;
 }
 
-.list-item .info{
+.list-item .info {
   padding: 0 10px 10px;
 }
 
-.list-item h4{
+.list-item h4 {
   font-weight: bold;
   font-size: 3rem;
   padding: 10px 0;
 }
 
-.list-item p{
+.list-item p {
   /* font-size: 1.6rem; */
   line-height: 1.5;
 }
 
-.container span.price{
+.container span.price {
   display: block;
   margin-top: 1rem;
   font-size: 1.4em;
 }
-
