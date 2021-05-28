@@ -874,6 +874,9 @@ ul.activty_list {
 ul.activty_list li {
   padding: 20px 0;
 }
+ul.activty_list li br{
+  display: none;
+}
 @media (max-width: 576px) {
   ul.activty_list li {
     height: 6rem;
