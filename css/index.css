@@ -16,11 +16,18 @@ img{
   position: relative;
   /* border:1px solid red; */
 }
+@media (max-width: 576px) {
+  .banner {
+      /* border:1px solid red; */
+      height: 80vh;
+      width: 100vw;
+  }
+}
 
 @media (max-width: 768px) {
   .banner {
       /* border:1px solid red; */
-      height: 100vh;
+      height: 80vh;
       width: 100vw;
   }
 }
