@@ -375,6 +375,7 @@ a.inner_block:hover button {
   .blog{
     /* border: 2px solid blue; */
     /* height: 62rem; */
+    width: 100%;
     padding: 4rem 1rem;
   }
 }
@@ -421,7 +422,7 @@ div.blogger_list {
     width: 30rem;
     justify-items: center;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
   }
 }
 @media (max-width: 768px) {
@@ -442,6 +443,7 @@ div.blogger_list {
   border-radius: 50%;
   /* height: 25rem; */
   box-shadow: inset 5em 1em #1E464A;
+  /* margin: 2rem; */
 }
 
 @media (max-width: 768px) {
@@ -470,16 +472,6 @@ div.item_info{
   padding: 10px 15px;
 }
 
-.blog p{
-  /* border: 2px solid black; */
-  white-space: normal; 
-  /* height: 60%; */
-  width: 100%;
-  line-height: 2.5rem;
-
-}
-
-
 .blogger{
   /* width: 100%; */
   /* height : 50rem; */
@@ -494,10 +486,12 @@ position: relative;
 
 .blogger > a img{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  max-width: 27.5rem;
+  max-height: 27.5rem;
+  height: 90%;
   object-fit: cover;
   object-position: center;
 }
@@ -523,8 +517,11 @@ position: relative;
 .blogger .item_info{
   border: 3px solid green;
   width: 100%;
+  height: 40%;
   overflow: hidden;
+  margin-top: 2rem;
 }
+
 
 .blogger .item_info a{
   text-decoration: none;
@@ -546,7 +543,7 @@ position: relative;
   font-size: 1.4rem;
 }
 
-.blog .item_info .title{
+.blogger .item_info .title{
   font-size: 2rem;
   font-weight: bold;
   padding: 10px 0;
@@ -555,21 +552,26 @@ position: relative;
   margin-bottom: 10px;
 }
 
-.blog .item_info p{
+.blogger .item_info p{
+  /* border: 2px solid black; */
   border-bottom: none;
+  white-space: normal; 
+  line-height: 2.5rem;
   width: 100%;
-  /* height: 6rem; */
+  height: 14rem;
+  overflow: hidden;
 }
 @media (max-width: 576px){
   .blog .item_info p{
     /* border: 3px solid red; */
     margin-top: 2rem;
-    /* height : 30rem; */
+    height: 16.5em;
+    overflow: hidden;
   }
 }
 @media (max-width: 678px){
   .blog .item_info p{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     margin-top: 2rem;
     /* height : 30rem; */
   }
