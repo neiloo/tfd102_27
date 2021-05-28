@@ -1,5 +1,5 @@
 /*===== banner 區塊 =====*/
-.main .scroll_top, footer {
+footer {
   display: none;
 }
 
@@ -902,6 +902,7 @@ ul.activty_list li a:hover {
   background-color: #1E464A;
 }
 
+/*==================== scroll_top ===================== */
 .scroll_top img{
   background-color: rgba(255, 255, 255, 0.848);
   width: 55px;
@@ -910,6 +911,13 @@ ul.activty_list li a:hover {
   right: 0;
   z-index: 1;
   /* border: 1px solid red; */
+}
+
+@media (max-width: 576px) {
+  .scroll_top img{
+    width: 4rem;
+    z-index: 10;
+  }
 }
 
 .scroll_top.show img{
