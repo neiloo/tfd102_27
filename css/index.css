@@ -818,7 +818,38 @@ position: relative;
 }
 @media (max-width: 576px) {
   .section3 .left_img {
+    width: 20%;
     background-size: cover;
+  }
+}
+
+/* 最新消息區塊 */
+div.activity {
+  /* border: 1px solid blue; */
+  width: calc(100% - 100px);
+  height: 100%;
+  align-self: center;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 576px) {
+  div.activity {
+    width: 100vw;
+    margin-left: 1rem;
+  }
+}
+
+ul.activty_list {
+  /* border: 2px solid red; */
+  list-style: none;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+@media (max-width: 576px) {
+  ul.activty_list {
+    /* border: 2px solid red; */
+    margin: 0;
   }
 }
 
@@ -836,35 +867,6 @@ position: relative;
     margin-left: 1rem;
     margin-top: 0;
     margin-bottom: 2rem;
-  }
-}
-
-/* 最新消息區塊 */
-div.activity {
-  /* border: 1px solid blue; */
-  width: calc(100% - 100px);
-  height: 100%;
-  align-self: center;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 576px) {
-  div.activity {
-    width: 100vw;
-  }
-}
-
-ul.activty_list {
-  /* border: 2px solid red; */
-  list-style: none;
-  margin-left: 60px;
-  margin-top: 20px;
-}
-@media (max-width: 576px) {
-  ul.activty_list {
-    /* border: 2px solid red; */
-    margin: 0;
   }
 }
 
