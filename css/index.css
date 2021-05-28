@@ -1017,7 +1017,7 @@ ul.activty_list li a:hover {
   .section4 .swiper-container {
     /* border: 3px solid red; */
     width:  70%;
-    height: 60rem;
+    height: 40rem;
   }
 }
 @media (max-width: 576px) {
@@ -1042,7 +1042,8 @@ ul.activty_list li a:hover {
   .swiper-wrapper .swiper-slide img{
     /* border: 1px solid red; */
     width: 65%;
-    bottom: 30%;
+    left: calc((100% - 65%) / 2);
+    bottom: 13%;
     box-shadow: 0 0 2rem 2px hsla(0, 0%, 100%, .8);
   }
 }
@@ -1051,6 +1052,7 @@ ul.activty_list li a:hover {
     /* border: 1px solid red; */
     width:  60%;
     bottom: 30%;
+    left: calc((100% - 60%) / 2);
     box-shadow: 0 0 2rem 2px hsla(0, 0%, 100%, .8);
   }
 }
@@ -1071,15 +1073,18 @@ ul.activty_list li a:hover {
 }
 @media (max-width: 768px) {
   .swiper-slide p{
+    font-size: 1.4rem;
     /* border: 1px solid red; */
     width:  65%;
-    bottom: 22%;
+    left: calc((100% - 65%) / 2);
+    bottom: 3%;
   }
 }
 @media (max-width: 576px) {
   .swiper-slide p{
     /* border: 1px solid red; */
     width:  60%;
+    left: calc((100% - 60%) / 2);
     bottom: 12%;
   }
 }
