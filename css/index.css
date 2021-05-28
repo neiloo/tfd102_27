@@ -1,5 +1,5 @@
 /*===== banner 區塊 =====*/
-.main .scroll_top, .main .section3, .main .section4, footer {
+.main .scroll_top, .main .section4, footer {
   display: none;
 }
 
@@ -160,7 +160,7 @@ div.banner_img::before {
   }
 }
 
-/*===== section1 =====*/
+/*===================== section1 =========================*/
 
 .section1 {
   /* border: 1px solid blue; */
@@ -361,7 +361,7 @@ a.inner_block:hover button {
 }
 
 
-/*===== blog  =====*/
+/*======================= blog  ======================*/
 .blog{
   /* border: 2px solid blue; */
   width: 90%;
@@ -577,7 +577,7 @@ position: relative;
   }
 }
 
-/*===== section2 =====*/
+/*===================== section2 ====================*/
 .section2 {
   /* border: 1px solid black; */
   background-image: linear-gradient(220deg, white 1200px, #1E464A 20px);
@@ -782,18 +782,28 @@ position: relative;
   }
 }
 
-/*=====* section3 =====**/
+/* ================= section3 =================*/
 .section3 {
   /* border: 1px solid black; */
   width: var(--page-width);
-  min-width: 600px;
+  /* min-width: 600px; */
   height: 400px;
   margin: 0 auto;
   margin-top: 100px;
   display: flex;
+  padding: 0 4rem;
   /* z-index: -1; */
 }
+@media (max-width: 576px){
+  .section3 {
+    margin-top: 8rem;
+    width: 100vw;
+    height: 55vh;
+    padding: 0;
+  }
+}
 
+/* 左邊圖片 */
 .section3 .left_img {
   /* border: 1px solid red; */
   width: 10%;
@@ -806,7 +816,13 @@ position: relative;
   /* align-self: center; */
   /* margin-left: 60px; */
 }
+@media (max-width: 576px) {
+  .section3 .left_img {
+    background-size: cover;
+  }
+}
 
+/* 標題 */
 .activity h1 {
   border-left: 10px solid #DCAE72;
   margin-left: 80px;
@@ -815,7 +831,15 @@ position: relative;
   font-size: 3rem;
   color: #0D1C32;
 }
+@media (max-width: 576px) {
+  .activity h1 {
+    margin-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}
 
+/* 最新消息區塊 */
 div.activity {
   /* border: 1px solid blue; */
   width: calc(100% - 100px);
@@ -825,15 +849,47 @@ div.activity {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 576px) {
+  div.activity {
+    width: 100vw;
+  }
+}
 
 ul.activty_list {
+  /* border: 2px solid red; */
   list-style: none;
   margin-left: 60px;
   margin-top: 20px;
 }
+@media (max-width: 576px) {
+  ul.activty_list {
+    /* border: 2px solid red; */
+    margin: 0;
+  }
+}
 
+/* 活動內容 */
 ul.activty_list li {
   padding: 20px 0;
+}
+@media (max-width: 576px) {
+  ul.activty_list li {
+    height: 6rem;
+    padding: 2rem 0;
+    line-height: 2rem;
+  }
+  ul.activty_list li span {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+  ul.activty_list li span:nth-child(2) {
+    width: 65%;
+  }
+  ul.activty_list li span.date {
+    /* border: 2px solid green; */
+    margin-right: 0.5rem;
+    vertical-align: top;
+  }
 }
 
 ul.activty_list li a {
@@ -872,7 +928,16 @@ ul.activty_list li a:hover {
   padding: 0.5rem 0.5rem;
   color: gray;
 }
-
+@media (max-width: 576px) {
+  .readmore{
+    /* border: 2px solid red; */
+    height: 6rem;
+    margin-left: 67%;
+    margin-top: 0;
+    font-size: 1.4rem;
+    /* padding: 2rem 0; */
+  }
+}
 .activity .readmore:hover{
   text-decoration: none;
   color: white;
@@ -880,7 +945,7 @@ ul.activty_list li a:hover {
   padding: 0.5rem 0.5rem;
   /* border: 1px solid black; */
 }
-/*====== section4 ======*/
+/*================= section4 ==================*/
 .section4{
   /* border: 1px solid black; */
   margin: 20px auto;
