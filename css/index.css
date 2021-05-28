@@ -379,13 +379,6 @@ a.inner_block:hover button {
     padding: 4rem 1rem;
   }
 }
-@media (max-width: 576px) {
-  .blog{
-    /* border: 2px solid blue; */
-    /* height: 152rem; */
-  }
-}
-
 
 .blog h1{
   /* border: 3px solid black; */
