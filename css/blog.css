@@ -3,14 +3,25 @@
     height: 210px;
 }
 
+@media (max-width: 768px) {
+  .container img {
+    height: 15rem;
+  }
+}
 @media (max-width: 576px) {
-  
+  .container img {
+    height: 12rem;
+  }
+  .art9{
+    display: none;
+  }
 }
 .container img:hover {
   transform:scale(1.05,1.05);
   transition:transform 0.4s ease;
 }
 
+/* =================== Blog 區塊 =======================*/
 div.column_block {
     /* border: 1px solid red; */
     padding: 20px;
@@ -22,6 +33,19 @@ div.column_block {
     margin: 0 auto;
     margin-top: 4rem;
 }
+@media (max-width: 576px) {
+  div.column_block {
+    /* border: 1px solid red; */
+    padding: 0;
+    column-fill: auto;
+    column-count: 2;
+    column-gap: 4rem;
+    /* height: 900px; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+}
 
 div.item_info{
     /* border: 1px solid grey; */
@@ -31,18 +55,33 @@ div.column_item {
     /* border: 1px solid green; */
     margin-bottom: 6rem;
 }
+@media (max-width: 576px) {
+  div.column_item {
+    margin-bottom: 2rem;
+  }
+}
 
-
+/* 文章內容 */
 .column_item .item_info .title, .column_item .item_info .date{
     color: #0D1C32;
     padding: 20px 0px;
     font-size: 1.4rem;
 }
 .column_item .item_info .title{
+  /* border: 2px solid red; */
     padding: 10px 0;
     height: 7rem;
     line-height: 2.5rem;
     border-bottom: 1px solid #1E464A;
+}
+@media  {
+  .column_item .item_info .title{
+    /* border: 2px solid red; */
+    padding: 0.2rem 0.2rem;
+    font-size: 1.2rem;
+    height: 50%;
+    overflow: hidden;
+  }
 }
 .column_item .item_info .date{
     border-bottom: none;
