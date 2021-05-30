@@ -74,7 +74,7 @@ div.column_item {
     line-height: 2.5rem;
     border-bottom: 1px solid #1E464A;
 }
-@media  {
+@media  (max-width: 576px ){
   .column_item .item_info .title{
     /* border: 2px solid red; */
     padding: 0.2rem 0.2rem;
@@ -86,6 +86,13 @@ div.column_item {
 .column_item .item_info .date{
     border-bottom: none;
     padding: 10px 0px;
+}
+@media  (max-width: 576px ){
+  .column_item .item_info .date{
+    border-bottom: none;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+  }
 }
 
 /** 分頁**/
