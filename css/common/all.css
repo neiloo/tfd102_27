@@ -73,6 +73,19 @@ body img {
   } 
 }
 
+/* Gallery 頁 banner */
+.page_header.gallery {
+  /* border: 10px solid #1E464A; */
+  margin: 0 auto;
+  padding-top: 40px;
+  height: 400px;
+  /* background-image: url(../../images/gallery_bg.jpg); */
+  background-color: #1E464A;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 .page_header.contact {
   /* border: 1px solid black; */
   /* background-color: #1E464A; */
@@ -250,17 +263,6 @@ body img {
   }
 }
 
-.page_header.gallery {
-  /* border: 10px solid #1E464A; */
-  margin: 0 auto;
-  padding-top: 40px;
-  height: 400px;
-  /* background-image: url(../../images/gallery_bg.jpg); */
-  background-color: #1E464A;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
 
 .page_header.gallery .wrapper h1 {
   color: white;
