@@ -85,7 +85,12 @@ body img {
   background-repeat: no-repeat;
   background-position: bottom;
 }
-
+@media (max-width: 768px) {
+  .page_header.gallery{
+    /* border: 8px solid red; */
+    height: 40vh;
+  } 
+}
 .page_header.contact {
   /* border: 1px solid black; */
   /* background-color: #1E464A; */
@@ -244,11 +249,35 @@ body img {
 
 /* Gallery 頁 h1 */
 .page_header.gallery .wrapper h1 {
+  /* border: 2px solid red; */
   color: white;
-  margin-top: 25rem;
-  margin-left: 10rem;
+  margin: 20rem 0 0 49rem;
   position: absolute;
-
+}
+@media (max-width: 768px) {
+  .page_header.gallery .wrapper h1 {
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 30%;
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 12%;}
+}
+@media (max-width: 576px) {
+  .page_header.gallery .wrapper h1 {
+    /* border: 2px solid red; */
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: -25%;
+  }
 }
 
 /* ====================== 副標區塊 =============================*/
@@ -278,6 +307,7 @@ body img {
   text-decoration: none;
 }
 
+
 .page_header .wrapper .img {
   background-position: center;
   background-repeat: no-repeat;
@@ -304,16 +334,29 @@ body img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* Banner 內容圖片區塊 */
 .page_header.gallery .wrapper img {
-  /* border: 1px solid red; */
+  /* border: 10px solid red; */
   min-width: 1200px;
   height: 300px;
   top: 12%;
   position: absolute;
   right: 0;
 }
+@media (max-width: 768px) {
+  .page_header.gallery .wrapper img {
+    /* border: 3px solid green; */
+    min-width: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
 
+    top: 18%;
+    /* padding-top: 40%; */
+
+  }
+}
 
 /* 列表樣式 */
 .list-block {
