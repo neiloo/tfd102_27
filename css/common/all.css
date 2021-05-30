@@ -94,38 +94,11 @@ body img {
   background-size: contain;
 }
 
-/* 線上商品頁 banner 區塊 */
-.page_header .wrapper {
-  /* border: 1px solid white; */
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
-  height: 100%;
-  position: relative;
-  padding: 9px 0;
-}
 
-.page_header .wrapper img {
-  width: 600px;
-  height: 300px;
-  position: absolute;
-  right: 20%;
-}
 
-.page_header.contact .wrapper .img {
-  /* border: 1px solid red; */
-  width: 900px;
-  right: 10rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.page_header .wrapper .img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
+
 
 /* =================== Banner 圖 =======================*/
 /* 線上商品頁 banner 圖 */
@@ -184,6 +157,25 @@ body img {
 }
 
 /*=================== Wrapper 區塊 =========================*/
+/* 線上商品頁 banner 內容區塊 */
+.page_header .wrapper {
+  /* border: 1px solid white; */
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+  position: relative;
+  padding: 9px 0;
+}
+
+.page_header .wrapper img {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  right: 20%;
+}
+
+/* Blog banner 內容區塊 */
 .page_header.blog .wrapper_info {
   /* border: 3px solid blue; */
   width: 80%;
@@ -210,7 +202,7 @@ body img {
     line-height: 1.5;
   }
 }
-
+/* ====================== Title 區塊 =============================*/
 .page_header .wrapper h1 {
   color: white;
   font-size: 3rem;
@@ -250,6 +242,16 @@ body img {
   vertical-align: top;
 }
 
+/* Gallery 頁 h1 */
+.page_header.gallery .wrapper h1 {
+  color: white;
+  margin-top: 25rem;
+  margin-left: 10rem;
+  position: absolute;
+
+}
+
+/* ====================== 副標區塊 =============================*/
 .page_header.blog p {
   margin-left: 20px;
   color: white;
@@ -264,14 +266,6 @@ body img {
 }
 
 
-.page_header.gallery .wrapper h1 {
-  color: white;
-  margin-top: 25rem;
-  margin-left: 10rem;
-  position: absolute;
-
-}
-
 .photo_list p {
   /* border: 1px solid blue; */
   text-align: center;
@@ -284,12 +278,31 @@ body img {
   text-decoration: none;
 }
 
+.page_header .wrapper .img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .page_header.contact .wrapper img {
   /* border: 1px solid red; */
   width: 900px;
   height: 300px;
   position: absolute;
   right: 20%;
+}
+
+.page_header.contact .wrapper .img {
+  /* border: 1px solid red; */
+  width: 900px;
+  height: 300px;
+  position: absolute;
+  right: 20%;
+  width: 900px;
+  right: 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page_header.gallery .wrapper img {
