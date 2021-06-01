@@ -1,4 +1,6 @@
-
+.container .saying, .container .stores, div.grid-container, .fillform .mymap, .fillform .sec_form { 
+  display: none;
+}
 /* 想說的話 */
 .container .saying{
   /* border: 1px solid red; */
@@ -153,6 +155,7 @@ div.column_item {
   padding: 20px 0;
   color: #0D1C32;
 }
+/* ===================== 內容區塊 =====================*/
 .grid-container{
   display: grid;
   /* border: 1px solid black; */
@@ -165,11 +168,16 @@ div.column_item {
   grid-template-columns: 49% 49%;
   padding: 40px 10rem;
   /* gap: 40px; */
-
 }
-/* .grid-container{
 
-} */
+@media (max-width: 576px) {
+  .grid-container{
+    border: 3px solid red;
+    width: 100%;
+    /* height: 80vh; */
+  }
+}
+
 .grid-item.mymap iframe {
   border: 1px solid black;
   margin-top: 1rem;
