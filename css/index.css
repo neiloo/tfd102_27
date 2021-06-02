@@ -392,6 +392,7 @@ a.inner_block:hover button {
   color:#0D1C32;
 }
 
+/* 部落格列表 */
 div.blogger_list {
   /* border: 2px solid red; */
   padding: 20px;
@@ -427,26 +428,52 @@ div.blogger_list {
   }
 }
 
-.blogger img {
-  /* margin: auto 2rem 2rem; */
-  border: 4px solid #1E464A;
-  border-radius: 50%;
-  /* height: 25rem; */
-  box-shadow: inset 5em 1em #1E464A;
-  /* margin: 2rem; */
+/* 部落客 */
+.blogger{
+  /* width: 100%; */
+  /* height : 50rem; */
+  /* border: 3px solid red; */
+  width: 30%;
 }
-
 @media (max-width: 768px) {
-  .blogger br {
+  .blogger br { /* 去掉 br */
     display: none;
   }
   .blogger{
    margin: 0 2rem;
  }
 }
+@media (max-width: 576px) {
+  .blogger{
+   margin-top: 2rem;
+ }
+}
 
 
-.blogger img:hover{
+/* 部落格照片 */
+.blogger > a img{
+  border: 4px solid #1E464A;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  max-width: 27.5rem;
+  max-height: 27.5rem;
+  height: 90%;
+  border-radius: 50%;
+  box-shadow: inset 5em 1em #1E464A;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 768px){
+  .blogger > a img{
+    width: 90%;
+    height: 90%;
+  }
+}
+
+
+.blogger > a img:hover{
   /* border: 1px solid black; */
   transform:scale(1.1,1.1);
   transition:transform 0.25s ease;
@@ -462,34 +489,25 @@ div.item_info{
   padding: 10px 15px;
 }
 
-.blogger{
-  /* width: 100%; */
-  /* height : 50rem; */
-  /* border: 3px solid red; */
-  width: 30%;
-}
-
 .blogger > a {
 display: block;
 position: relative;
 }
 
-.blogger > a img{
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  max-width: 27.5rem;
-  max-height: 27.5rem;
-  height: 90%;
-  object-fit: cover;
-  object-position: center;
-}
+
 .blogger > a::before{
   content: "";
   width: 100%;
   padding-bottom: 100%;
   display: block;
+}
+@media (max-width: 768px){
+  .blogger{
+    width: 100%;
+    /* border: 3px solid red; */
+    /* margin-top: 2rem; */
+    /* height : 45rem; */
+  }
 }
 @media (max-width: 576px){
   .blogger{
@@ -498,34 +516,24 @@ position: relative;
     margin-top: 2rem;
     /* height : 45rem; */
   }
-  
-  .blogger:first-child{
-    margin: 0;
-  }
 }
 
+/* 文章內容 */
 .blogger .item_info{
-  border: 3px solid green;
+  /* border: 3px solid green; */
   width: 100%;
-  height: 40%;
+  height: 50%;
   overflow: hidden;
   margin-top: 2rem;
 }
-
-
-.blogger .item_info a{
-  text-decoration: none;
-  color: #0D1C32;
+@media (max-width: 576px){
+  .blogger .item_info{
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
 }
 
-.blogger .item_info a:hover{
-  text-decoration: none;
-  color: white;
-  background: #1E464A;
-  padding: 0.5rem 0.5rem;
-  /* border: 1px solid black; */
-}
-
+/* 部落客名稱 */
 .blogger .item_info .title, .blogger .item_info p{
   border-bottom: 1px solid #1E464A;
   color: #0D1C32;
@@ -542,6 +550,7 @@ position: relative;
   margin-bottom: 10px;
 }
 
+/* 主內容 */
 .blogger .item_info p{
   /* border: 2px solid black; */
   border-bottom: none;
@@ -550,21 +559,30 @@ position: relative;
   width: 100%;
   height: 14rem;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media (max-width: 576px){
   .blog .item_info p{
     /* border: 3px solid red; */
-    margin-top: 2rem;
-    height: 16.5em;
+    /* margin-top: 2rem; */
+    line-height: 2.5rem;
+    /* height: 16.5em; */
     overflow: hidden;
   }
 }
-@media (max-width: 768px){
-  .blog .item_info p{
-    /* border: 3px solid red; */
-    margin-top: 2rem;
-    /* height : 30rem; */
-  }
+
+/* readmore */
+.blogger .item_info a{
+  text-decoration: none;
+  color: #0D1C32;
+}
+
+.blogger .item_info a:hover{
+  text-decoration: none;
+  color: white;
+  background: #1E464A;
+  padding: 0.5rem 0.5rem;
+  /* border: 1px solid black; */
 }
 
 /*===================== section2 ====================*/
