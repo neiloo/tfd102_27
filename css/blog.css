@@ -12,7 +12,7 @@
   .container img {
     height: 12rem;
   }
-  .art9{
+  .art9{  /* 不顯示第九篇文章*/
     display: none;
   }
 }
