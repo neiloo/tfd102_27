@@ -28,7 +28,6 @@ main {
 
 
 /* =================== 相片列表區塊 ====================== */
-/* 只有照片的區塊 */
 .grid-container {
   display: grid;
   /* border: 1px solid black; */
