@@ -8,20 +8,16 @@
   padding: 50px;
   margin: 50px auto;
 }
+
 @media (max-width: 768px) {
   .container {
-    padding: 0 5rem 2rem 5rem;
+    padding: 0 1rem 1rem 1rem;
   }
 }
 @media (max-width: 576px) {
   .container {
-    /* border: 2px solid black; */
-    height: 85vh;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* gap: 2rem; */
-    padding: 0 2rem;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0 1rem 1rem 1rem;
   }
 }
 
@@ -80,7 +76,6 @@ main {
 /* ===================== 產品內容 =====================*/
 .product{
   /* border: 3px solid red; */
-  width: 100%;
   height: 35%;
   position: relative;
   padding-top: 2rem;
@@ -88,7 +83,6 @@ main {
 @media (max-width: 576px) {
   .product{
     /* border: 3px solid red; */
-    width: 100%;
     height: 20%;
   }
 }
@@ -112,7 +106,7 @@ main {
   .product img{
     /* border: 3px solid green; */
     width: 100%;
-    height: 10rem;
+    height: 8rem;
   }
 }
 
@@ -156,8 +150,8 @@ main {
   .product::before{
     /* border: 2px solid red; */
     width: 70%;
-    height: 80%;
-    bottom: 1%;
+    height: 48%;
+    bottom: 40%;
   }
 }
 
