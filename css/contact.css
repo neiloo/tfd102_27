@@ -1,4 +1,4 @@
-.container .stores, div.grid-container, .fillform .mymap, .fillform .sec_form { 
+div.grid-container, .fillform .mymap, .fillform .sec_form { 
   display: none;
 }
 /*===================== 想說的話 ==========================*/
@@ -76,7 +76,7 @@ div.saying > img {
   }
 }
 
-/* 關於我們標題 */
+/* 關於我們 h1 */
 div.saying .saying_info h1{
   font-size: 3rem;
   /* border: 1px solid black; */
@@ -102,9 +102,9 @@ div.saying .saying_info h1{
   div.saying .saying_info h1{
       border-left: 6px solid #DCAE72;
       padding: 0 6px;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       right: 0;
-      top: 8%;
+      top: 4.5%;
       right: 18%;
   }
 }
@@ -132,26 +132,31 @@ div.saying .saying_info p{
   div.saying .saying_info p{
     color: grey;
     font-size: 1.2rem;
-    line-height: 2rem;;
+    line-height: 2.4rem;;
     position: absolute;
     right: 4rem;
     top: 11rem;
   }
 }
 
-/* 合作店家 */
+/* ================= 合作店家 ===================== */
 .container .stores{
   /* border: 1px solid red; */
-  height: 600px;
+  /* height: 600px; */
   background: linear-gradient(#1E464A, white);
   padding: 4rem 2rem;
   /* margin-top: 6rem; */
 }
 .container .stores img {
   width: 100%;
-  height: 210px;
+  /* height: 210px; */
 }
-
+@media (max-width: 576px) {
+  .container .stores img {
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+}
 div.column_block {
   /* border: 1px solid red; */
   padding: 20px;
@@ -162,19 +167,51 @@ div.column_block {
   width: 90%;
   margin: 0 auto;
   margin-top: 1rem;
+}@media (max-width: 5768px) {
+  div.column_block {
+    /* border: 1px solid red; */
+    padding: 1rem;
+    column-fill: balance;
+    column-count: 3;
+    column-gap: 1rem;
+    /* height: 900px; */
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  div.column_block {
+    /* border: 1px solid red; */
+    padding: 20px;
+    column-fill: balance;
+    column-count: 1;
+    column-gap: 30px;
+    /* height: 900px; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
 }
 
 div.item_info{
   /* border: 1px solid grey; */
   background-color: white;
-  height: 20rem;
+  /* height: 20rem; */
   padding: 10px 15px;
 }
 div.column_item {
   /* border: 1px solid green; */
   margin-bottom: 6rem;
 }
+@media (max-width: 576px) {
+  div.column_item {
+    /* border: 1px solid green; */
+    margin-bottom: 2rem;
+  }
+}
 
+/* 合作店家 h1 */
 .stores h1{
   font-size: 3rem;
   border-left: 10px solid #DCAE72;
@@ -183,13 +220,30 @@ div.column_item {
   padding: 0 10px;
   color: white;
 }
-
+@media (max-width: 768px) {
+  .stores h1{
+    border-left: 10px solid #DCAE72;
+    margin-left: 30rem ;
+    /* margin-bottom: 5rem; */
+    margin-top: 2rem;
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .stores h1{
+    margin-top: 0;
+    border-left: 6px solid #DCAE72;
+    margin-left: 12rem;
+    font-size: 1.8rem;
+  }
+}
 .column_item .item_info .title, .column_item .item_info p{
   border-bottom: 1px solid #1E464A;
   color: #0D1C32;
   padding: 10px 0;
   font-size: 1.4rem;
 }
+/* 店家名稱 */
 .column_item .item_info .title{
   font-size: 2rem;
   font-weight: bold;
@@ -198,11 +252,40 @@ div.column_item {
   border-bottom: 1px solid #1E464A;
   margin-bottom: 10px;
 }
-.column_item .item_info p{
-  /* margin-top: 10px; */
-  border-bottom: none;
+@media (max-width: 768px) {
+  .column_item .item_info .title{
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .column_item .item_info .title{
+    font-size: 1.6rem;
+  }
 }
 
+/* 店家地址 */
+.column_item .item_info p{
+  /* margin-top: 10px; */
+  line-height: 2rem;
+  border-bottom: none;
+}
+@media (max-width:768px) {
+  .column_item .item_info p.addr{
+    /* border: 2px solid red; */
+    height: 6rem;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .column_item .item_info p{
+    /* margin-top: 10px; */
+    line-height: 2rem;
+    border-bottom: none;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+}
 
 /* 表單區塊 */
 /* .container.fillform{
