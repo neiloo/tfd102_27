@@ -115,9 +115,9 @@ div.saying .saying_info h1{
 div.saying .saying_info p{
   color: white;
   font-size: 1.4rem;
-  line-height: 2.5rem;;
+  line-height: 2.8rem;;
   position: absolute;
-  right: 30rem;
+  right: 35rem;
   top: 30rem;
 }
 @media (max-width: 768px) {
