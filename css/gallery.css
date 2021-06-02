@@ -44,7 +44,15 @@ main {
     gap: 2rem;
   }
 }
-
+@media (max-width: 576px){
+  .grid-container {
+    display: grid;
+    grid-template-areas: "first first .""first first . ";
+    margin: 2rem 0.5rem 0.5rem;
+    padding: 0;
+    gap: 0.5rem;
+  }
+}
 .grid-item {
   /* border: 1px solid red; */
   /* padding: 20px; */
