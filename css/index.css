@@ -1020,6 +1020,7 @@ ul.activty_list li a:hover {
 }
 @media (max-width: 576px) {
   .section4 .intro h1 {
+    padding: 0 10px;
     margin-left: 27%;
   }
 }
@@ -1036,6 +1037,10 @@ ul.activty_list li a:hover {
 @media (max-width: 576px) {
   .section4 .intro p br{
     display: none;
+  }
+  .section4 .intro p{
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
 }
 
