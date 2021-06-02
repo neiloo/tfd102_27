@@ -576,6 +576,7 @@ position: relative;
     line-height: 2.5rem;
     /* height: 16.5em; */
     overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
