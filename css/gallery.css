@@ -1,20 +1,20 @@
-section.photo_list{
+/* section.photo_list{
   display: none;
   border: 2px solid red;
-}
+} */
 
 main {
-    width: 100%;
-    /* border: 1px solid red; */
-    margin: 0 auto;
+  width: 100%;
+  /* border: 1px solid red; */
+  margin: 0 auto;
 }
 
-.photo{
+.photo {
   /* border: 1px solid red; */
   position: relative;
 }
 
-.grid-item .photo .cover{
+.grid-item .photo .cover {
   /* border: 1px solid orange; */
   display: flex;
   justify-content: center;
@@ -27,24 +27,25 @@ main {
   display: none;
 }
 
-.grid-item .photo a:hover .cover{
+.grid-item .photo a:hover .cover {
   display: flex;
   /* justify-content: center;
   align-items: center;
   display: block; */
 }
-.grid-item .photo .cover img{
+
+.grid-item .photo .cover img {
   width: 2rem;
   height: 2rem;
 }
 
-.grid-item .photo .cover span{
+.grid-item .photo .cover span {
   color: white;
   font-size: 1.6rem;
   margin: 0 2.5rem 0 0.5rem;
 }
 
-.grid-item.-item1 .photo .cover span{
+.grid-item.-item1 .photo .cover span {
   /* border: 1px solid red; */
   color: white;
   font-size: 1.6rem;
@@ -53,97 +54,102 @@ main {
 
 
 
-.photo_list{
-    width: 900px;
-    margin: 0 auto;
+.photo_list {
+  width: 900px;
+  margin: 0 auto;
 }
+
 .grid-container {
-    display: grid;
-    /* border: 1px solid black; */
-    grid-template-areas: "first first ." "first first . ";
-    padding: 5rem 150px;
-    gap: 40px;
-  }
-  
-  .grid-item {
-    /* border: 1px solid red; */
-    /* padding: 20px; */
-    font-size: 30px;
-    text-align: center;
-  }
-  .grid-item:nth-child(1){
-    /* 這個 item 命名為 first */
-    grid-area: first;
-  }
-
-  .grid-item .photo a img{
-    /* border: 2px solid orange; */
-    width: 100%;
-    height: 100%;
+  display: grid;
+  /* border: 1px solid black; */
+  grid-template-areas: "first first .""first first . ";
+  padding: 5rem 150px;
+  gap: 40px;
 }
 
-section.photo-list{
-    width: var(--page-width);
-    /* border: 1px solid red; */
-    margin: 50px auto;
+.grid-item {
+  /* border: 1px solid red; */
+  /* padding: 20px; */
+  font-size: 30px;
+  text-align: center;
 }
 
-.photo-list .container{
-    background-image: url(../images/shoplist_shopbg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    gap: 0.5rem;
-    /* padding: 50px; */
-    /* margin: 50px; */
+.grid-item:nth-child(1) {
+  /* 這個 item 命名為 first */
+  grid-area: first;
 }
 
-.photo a{
-    width: 100%;
-    text-decoration: none;
+.grid-item .photo a img {
+  /* border: 2px solid orange; */
+  width: 100%;
+  height: 100%;
 }
-.photo a .photo-info{
-    border: 1px solid black;
-    width: 100%;
-    height: 100%;
-    background-color: grey;
-    display: none;
+
+section.photo-list {
+  width: var(--page-width);
+  /* border: 1px solid red; */
+  margin: 50px auto;
 }
+
+.photo-list .container {
+  background-image: url(../images/shoplist_shopbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  gap: 0.5rem;
+  /* padding: 50px; */
+  /* margin: 50px; */
+}
+
+.photo a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.photo a .photo-info {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  display: none;
+}
+
 /** 分頁**/
 .pagination {
-    /* border: 1px solid green; */
-    display: inline-block;
-    font-size: 0;
-    width: 40%;
-    /* position: absolute;
+  /* border: 1px solid green; */
+  display: inline-block;
+  font-size: 0;
+  width: 40%;
+  /* position: absolute;
     left: 50%; */
-    margin-left: 32%;
-  }
-  
-  .pagination a {
-    color: black;
-    font-size: 1rem;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-    border-right: 0;
-  }
-  
-  .pagination a:last-child{
-    border-right: 1px solid #ddd;
-    border-radius: 0 5px 5px 0;
-  }
+  margin-left: 32%;
+}
 
-  .pagination a:first-child{
-    display: inline-block;
-    border-radius: 5px 0 0 5px;
-  }
-  .pagination a.active {
-    background-color: #438286;
-    color: white;
-  }
-  
-  .pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a {
+  color: black;
+  font-size: 1rem;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  border-right: 0;
+}
 
-  
+.pagination a:last-child {
+  border-right: 1px solid #ddd;
+  border-radius: 0 5px 5px 0;
+}
+
+.pagination a:first-child {
+  display: inline-block;
+  border-radius: 5px 0 0 5px;
+}
+
+.pagination a.active {
+  background-color: #438286;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
