@@ -94,7 +94,7 @@ div.saying .saying_info h1{
     font-size: 2.4rem;
       border-left: 10px solid #DCAE72;
       right: 0;
-      top: 30%;
+      top: 13%;
       right: 23%;
   }
 }
@@ -103,11 +103,9 @@ div.saying .saying_info h1{
       border-left: 6px solid #DCAE72;
       padding: 0 6px;
       font-size: 1.6rem;
-      /* width: 28%;
-      height: 6%; */
       right: 0;
-      top: 30%;
-      right: 17%;
+      top: 8%;
+      right: 18%;
   }
 }
 
