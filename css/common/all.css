@@ -134,7 +134,7 @@ body img {
 }
 @media (max-width: 576px) {
   .page_header.shop .img {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 90%;
     height: 70%;
     position: absolute;
