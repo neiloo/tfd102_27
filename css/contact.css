@@ -35,17 +35,6 @@ div.saying .saying_info{
   margin-top: 18%;
   margin-left: 2%;
 }
-/* @media (max-width: 768px) {
-  div.saying .saying_info{
-    border: 3px solid red;
-    width: 41%;
-    height: 60%;
-    background-image: none;
-    margin-top: 20%;
-    margin-left: 0;
-    margin-right: 5%;
-  }
-} */
 @media (max-width: 768px) {
   div.saying .saying_info{
     /* border: 3px solid red; */
