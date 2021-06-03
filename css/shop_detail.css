@@ -1,4 +1,6 @@
-
+/* *{
+  outline: 1px solid red;;
+} */
 section.shop_detail .lower_line,
 section.recommend_item {
   display: none;
@@ -293,12 +295,13 @@ section.sec1 div.flex_container div.items.-left div.img_block>img {
   margin: 5px 0;
 }
 
+/* 購買按鈕 */
 .product_info div.item_block button[type="submit"] {
   padding: 4px 20px;
   cursor: pointer;
   border: none;
   font-size: 1.5rem;
-  width: 150px;
+  width: 40%;
   background-color: #699F9C;
   color: white;
   margin: 5px 0;
