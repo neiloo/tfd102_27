@@ -362,6 +362,7 @@ a.inner_block:hover button {
 .blog{
   /* border: 2px solid blue; */
   width: 90%;
+  max-width: 1200px;
   /* height: 70vh; */
   margin: 0 auto;
   text-align: center;
@@ -434,6 +435,7 @@ div.blogger_list {
   /* height : 50rem; */
   /* border: 3px solid red; */
   width: 30%;
+  max-width: 28rem;
 }
 @media (max-width: 768px) {
   .blogger br { /* 去掉 br */
