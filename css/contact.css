@@ -150,8 +150,8 @@ div.saying .saying_info p{
 }
 @media (max-width: 768px) {
   .container .stores{
-    border: 1px solid red;
-    padding: 4rem 2rem;
+    /* border: 1px solid red; */
+    padding: 4rem 2rem 0;
   }
 }
 .container .stores img {
