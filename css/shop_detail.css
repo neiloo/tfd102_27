@@ -1,12 +1,16 @@
 /* *{
   outline: 1px solid red;;
 } */
-section.shop_detail .lower_line,
 section.recommend_item {
   display: none;
 }
 
 /* ================== 商品資訊區塊 =========================*/
+section.shop_detail{
+  /* border: 3px solid red; */
+  margin-top: 8rem;
+}
+
 div.grid_container {
   /* border: 1px solid red; */
   max-width: 1200px;
@@ -53,6 +57,9 @@ div.grid_item {
   div.grid_item {
     /* border: 1px solid blue; */
     padding: 0;
+  }
+  div.grid_item:last-child {
+    /* border: 1px solid red; */
   }
 }
 
@@ -330,9 +337,22 @@ section.sec1 div.flex_container div.items.-left div.img_block>img {
 .lower_line {
   content: '';
   border-bottom: 3px solid #699f9c63;
-  width: 80%;
+  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .lower_line {
+    border-bottom: 1px solid grey;
+    width: 95%;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 576px) {
+  .lower_line {
+    display: none;
+  }
 }
 
 /* =================== 推薦商品區塊 ==================== */
