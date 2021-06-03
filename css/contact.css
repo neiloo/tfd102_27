@@ -141,7 +141,7 @@ div.saying .saying_info p{
 
 /* ================= 合作店家 ===================== */
 .container .stores{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* height: 600px; */
   background: linear-gradient(#1E464A, white);
   padding: 4rem 8rem;
@@ -351,7 +351,7 @@ div.column_item {
 
 @media (max-width: 576px) {
   .grid-container{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 100%;
     /* height: 80vh; */
   }
