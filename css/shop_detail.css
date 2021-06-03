@@ -17,7 +17,7 @@ div.grid_container {
 }
 @media (max-width: 768px) {
   div.grid_container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     margin-top: 120px;
     margin-bottom: 50px;
@@ -28,7 +28,7 @@ div.grid_container {
 }
 @media (max-width: 576px) {
   div.grid_container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0 auto;
     /* margin-top: 120px; */
     margin-bottom: 50px;
@@ -39,12 +39,12 @@ div.grid_container {
 }
 
 div.grid_item {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   padding: 40px 40px;
 }
 @media (max-width: 768px) {
   div.grid_item {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding: 0;
   }
 }
@@ -55,28 +55,65 @@ div.grid_item {
   }
 }
 
+/* ============= 產品圖片區塊 ==============*/
 div.grid_item:first-child {
   /* border: 3px solid green; */
   background-color: #b5d9d548;
 }
 
 .detail_photos {
-  /* border: 1px solid orange; */
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  /* border: 3px solid #DCAE72; */
+  display: block;
   padding: 20px;
 }
-
 .detail_photos img {
   border: 2px solid lightgray;
 }
 
-
-.detail_photos #main_photo {
-  /* border: 1px solid black; */
-  margin-bottom: 30px;
+/* 大圖一張 */
+.detail_photos .big_photo {
+  /* border: 2px solid black; */
+  width: 60%;
+  margin:0 auto;
+  margin-bottom: 1rem;
 }
+@media (max-width: 576px) {
+  .detail_photos .big_photo {
+    /* border: 2px solid black; */
+    width: 100%;
+    margin:0 auto;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .detail_photos .big_photo img{
+    border: 5px solid #DCAE72;
+    width: 100%;
+    margin:0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
+/* 小圖三張區塊 */
+.detail_photos .other_photo {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 63%;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .detail_photos .other_photo {
+    width: 100%;
+  }
+}
+/* 小圖 */
+.detail_photos .other_photo a.thumb_img {
+  display: inline-block;
+  /* border: 2px solid red; */
+  width: 30%;
+  margin: 0 auto;
+}
+
 
 section.sec1 {
   /* border: 1px solid red; */
