@@ -246,11 +246,14 @@ div.column_item {
     font-size: 1.8rem;
   }
 }
+/* =================== 店家資訊 ====================== */
 .column_item .item_info .title, .column_item .item_info p{
   border-bottom: 1px solid #1E464A;
   color: #0D1C32;
   padding: 10px 0;
-  font-size: 1.2rem;
+}
+.column_item .item_info p {
+  font-size: 1.4rem;
 }
 
 /* 店家名稱 */
@@ -280,17 +283,11 @@ div.column_item {
   line-height: 2rem;
   border-bottom: none;
 }
-@media (max-width:768px) {
-  .column_item .item_info p.addr{
-    /* border: 2px solid red; */
-    height: 6rem;
-    line-height: 2.5rem;
-  }
-}
 @media (max-width: 768px) {
   .column_item .item_info p{
     /* margin-top: 10px; */
     line-height: 2rem;
+    height: 4rem;
     border-bottom: none;
     padding: 0;
     padding-bottom: 1rem;
@@ -301,9 +298,10 @@ div.column_item {
   .column_item .item_info p{
     /* margin-top: 10px; */
     line-height: 2rem;
+    height: auto;
     border-bottom: none;
     padding: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
     text-align: left;
   }
 }
