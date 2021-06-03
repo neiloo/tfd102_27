@@ -141,11 +141,17 @@ div.saying .saying_info p{
 
 /* ================= 合作店家 ===================== */
 .container .stores{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   /* height: 600px; */
   background: linear-gradient(#1E464A, white);
-  padding: 4rem 2rem;
+  padding: 4rem 8rem;
   /* margin-top: 6rem; */
+}
+@media (max-width: 768px) {
+  .container .stores{
+    border: 1px solid red;
+    padding: 4rem 2rem;
+  }
 }
 .container .stores img {
   width: 100%;
