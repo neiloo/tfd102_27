@@ -239,9 +239,10 @@ div.column_item {
 }
 @media (max-width: 576px) {
   .stores h1{
-    margin-top: 0;
+    width: 9.8rem;
+    margin: 0 auto;
     border-left: 6px solid #DCAE72;
-    margin-left: 12rem;
+    /* margin-left: 12rem; */
     font-size: 1.8rem;
   }
 }
