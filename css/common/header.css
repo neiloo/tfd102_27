@@ -60,7 +60,7 @@ header.header{
   background-color: #DCAE72; }
 
 
-
+/* ============== 漢堡 bar 列表 ================ */
 @media (max-width: 768px){
   header.header{
     width: 100%;
@@ -104,31 +104,6 @@ header.header{
     display: inline-block;
   }
 }
-
-/* @media screen and (min-width: 576px) and (max-width: 767px){
-  header.header{
-    width: 540px;
-  }
-  header.header ul{
-    display: none;
-  }
-  .hamburger{
-    border: 3px solid red;
-    width: 50px;
-    display: inline-block;
-    right: 40%;
-    top: 10%;
-  }
-} */
-
-/* @media screen and (min-width: 768px) and (max-width: 991px){
-  header.header{
-    width: 720px;
-  }
-  .hamburger {
-    display: inline-block;
-  }
-} */
 
 div.block nav.nav{
   display: flex;
