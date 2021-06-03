@@ -68,9 +68,9 @@
         </ul>
         <button class="hamburger hamburger--spring" type="button">
           <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
+            <span class="hamburger-inner"></span>
           </span>
-      </button>
+        </button>
       </nav>
   </header>
   <main>
@@ -248,20 +248,20 @@
       console.log(img.data('img'));
       console.log('更換圖片');
     });
-    
+
 
     $('.gobuy').click(function () {
       window.location.href = './checkout.html';
       return false;
     });
-    
+
     $(function () {
-            // hamburger icon 的切換
-            $("button.hamburger").on("click", function () {
-                $(this).toggleClass("is-active");
-                $(this).parents("header").toggleClass("show-nav");
-            });
-        });
+      // hamburger icon 的切換
+      $("button.hamburger").on("click", function () {
+        $(this).toggleClass("is-active");
+        $(this).parents("header").toggleClass("show-nav");
+      });
+    });
   </script>
 
 </body>
