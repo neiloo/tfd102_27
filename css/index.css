@@ -1012,16 +1012,20 @@ ul.activty_list li a:hover {
 
 /* 標題區塊 */
 .section4 .intro h1 {
-  display: inline-block;
-  font-size: 3rem;
+  /* border: 2px solid red; */
+  display: block;
+  width: 17.5%;
+  font-size: 3rem; 
+  text-align: center;
   border-left: 10px solid #DCAE72;
   color: #0D1C32;
-  margin-left: 40%;
+  margin: 0 auto;
 }
 @media (max-width: 576px) {
   .section4 .intro h1 {
+    /* border: 2px solid red; */
+    width: 48%;
     padding: 0 10px;
-    margin-left: 27%;
   }
 }
 
