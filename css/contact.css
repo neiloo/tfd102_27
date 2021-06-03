@@ -145,6 +145,7 @@ div.saying .saying_info p{
   /* height: 600px; */
   background: linear-gradient(#1E464A, white);
   padding: 4rem 8rem;
+  text-align: center;
   /* margin-top: 6rem; */
 }
 @media (max-width: 768px) {
