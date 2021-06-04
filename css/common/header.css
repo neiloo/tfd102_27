@@ -81,7 +81,7 @@ header.header{
 
   header.header.show-nav ul{
     transform: translateY(0%);
-  }
+  }  
   .hamburger{
     /* border: 3px solid red; */
     width: 50px;
@@ -90,9 +90,11 @@ header.header{
     top: 15%;
   }
 
-  header.show-nav ul{
+  /* 切換漢堡 bar */
+  header.header.show-nav ul{
     display: block;
     height: auto;
+    transform: translateY(0%);
   }
   header.show-nav ul li{
     /* border-bottom: 1px solid black; */
@@ -100,7 +102,13 @@ header.header{
     padding: 25px 0;
   }
   header.show-nav ul li.cart a{
+    /* border: 2px solid red; */
     display: inline-block;
+  }
+  header.header.show-nav{
+    border: 2px solid red;
+    backdrop-filter: none;
+    background-color: #0D1C32;
   }
 }
 
@@ -218,12 +226,12 @@ li.cart > a:hover .icon_cart{
   pointer-events: none;
 }
 
-li.cart:hover  .cart_info{
+li.cart:hover  .cart_info{ 
 
   transform: none;
   opacity: 1;
   pointer-events: auto;
- 
+
 }
 
 .cart .cart_info table{
