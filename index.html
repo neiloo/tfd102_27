@@ -28,8 +28,8 @@
 </head>
 
 <body>
+  <!-- <div class="menu-mask"></div> -->
   <header class="header">
-    <div class="">
       <nav class="navbar">
         <a href="./" class="logo"><img src="./images/logo.svg"></a>
         <ul class="nav_list">
@@ -387,10 +387,15 @@
         ticking = true;
       });
 
+
+      var $menuMask = $('<div class="menu-mask"></div>').appendTo($('body'));
+      
+
       // hamburger icon 的切換
-      $("button.hamburger").on("click", function () {
+      $("button.hamburger").click(function () {
         $(this).toggleClass("is-active");
         $(this).parents("header").toggleClass("show-nav");
+        $menuMask.toggleClass('show');
       });
     });
   </script>
