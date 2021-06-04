@@ -400,7 +400,7 @@ section.sec1 div.flex_container div.items.-left div.img_block>img {
 .owl-item .item {
   /* border: 1px solid lightgrey; */
   width: 100%;
-  height: 22rem;
+  height: 26rem;
   background: #b5d9d556;
   margin: 20px auto;
   padding: 10px;
@@ -409,10 +409,10 @@ section.sec1 div.flex_container div.items.-left div.img_block>img {
   .owl-item .item {
     /* border: 1px solid red; */
     width: 100%;
-    height: 18rem;
+    height: 20rem;
     background: #b5d9d556;
-    margin: 20px auto;
-    padding: 10px;
+    margin: auto auto;
+    padding: 5px;
     text-align: center;
   }
 }
@@ -425,13 +425,15 @@ section.sec1 div.flex_container div.items.-left div.img_block>img {
 /* 推薦產品-圖片 */
 .owl-carousel .owl-item img {
   border: 2px solid #DCAE72;
-  width: 100%;
-  height: 150px;
+  width: 90%;
+  margin: 10px auto;
+  height: 160px;
   background-color: white;
 }
 @media (max-width: 768px) {
   .owl-carousel .owl-item img {
     /* border: 2px solid blue; */
+    margin: 0.5rem auto;
     width: 100%;
     height: 10rem;
   }
@@ -443,14 +445,39 @@ section.sec1 div.flex_container div.items.-left div.img_block>img {
     height: 8rem;
   }
 }
+
+/* 產品名稱 */
 .owl-item .item p {
-  margin-top: 10px;
+  margin: 10px;
+  height: 3rem;
+  font-size: 1.4rem;
+}
+@media (max-width: 576px) {
+  .owl-item .item p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    height: 3rem;
+  }
+}
+
+/* 產品價格 */
+.owl-item .item span {
+  margin: 10px;
+  font-size: 1.6rem;
+}
+@media (max-width: 576px) {
+  .owl-item .item span {
+    /* border: 2px solid red; */
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
 }
 
 #owl .owl-nav {
   position: absolute;
   width: 100%;
-  top: 18%;
+  top: 30%;
 }
 
 #owl .owl-nav .owl-prev,
