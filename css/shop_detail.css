@@ -452,6 +452,13 @@ section.sec1 div.flex_container div.items.-left div.img_block>img {
   height: 3rem;
   font-size: 1.4rem;
 }
+@media (max-width: 768px) {
+  .owl-item .item p {
+    font-size: 1.2rem;
+
+    height: 2.8rem;
+  }
+}
 @media (max-width: 576px) {
   .owl-item .item p {
     margin: 0;
@@ -465,6 +472,13 @@ section.sec1 div.flex_container div.items.-left div.img_block>img {
 .owl-item .item span {
   margin: 10px;
   font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .owl-item .item span {
+    /* border: 2px solid red; */
+    font-size: 1.4rem;
+    margin: 1rem;
+  }
 }
 @media (max-width: 576px) {
   .owl-item .item span {
