@@ -133,13 +133,6 @@ div.block nav.nav{
   display: block;
 }
 
-.-on{
-  border-bottom: 3px solid #DCAE72;
-  border-radius:  1px;
-  color: #b5d9d5;
-  padding-bottom: 10px;
-}
-
 nav a.logo, ul.nav_list{
   align-self: center;
 }
@@ -154,20 +147,6 @@ ul.nav_list{
   justify-content: space-around;
   /* align-content: center; */
 }
-
-/* @media screen and (min-width: 768px) and (max-width: 991px){
-  header.header{
-    width: 720px;
-  }
-  ul.nav_list{
-    border: 2px solid white;
-    width: 500px;
-    margin-right: 250px;
-  }
-} */
-
-/* @media (min-width: 1199px){
-} */
 
 ul.nav_list li > a{
   /* border: 1px solid black; */
