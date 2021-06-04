@@ -1,9 +1,10 @@
 
-
+/* ======================== 結帳步驟 =========================== */
 .checkout .process .step:first-child .text::after{
     background-color: #1E464A;
 }
 
+/* 購物車區塊 */
 .checkout .cart-items{
     /* border: 1px solid blue; */
     margin-bottom: 4rem;
@@ -24,7 +25,9 @@
     text-align: center;
 }
 
+/* 步驟下方文字 */
 .checkout .process .step span{
+    /* border: 2px solid red; */
     /* font-size: 1.2rem; */
     font-size: 1.4rem;
     padding: 1.5rem;
@@ -35,7 +38,9 @@
     padding: 2rem;
 }
 
+/* ========================== 主區塊 ===========================*/
 .checkout{
+    /* border: 2px solid red; */
     margin-top: 12rem;
 }
 
