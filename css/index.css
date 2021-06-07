@@ -1023,6 +1023,18 @@ ul.activty_list li a:hover {
   color: #0D1C32;
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  .section4 .intro h1 {
+    width: 25%;
+    min-width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .section4 .intro h1 {
+    width: 25%;
+    min-width: 20%;
+  }
+}
 @media (max-width: 576px) {
   .section4 .intro h1 {
     /* border: 2px solid red; */
@@ -1108,7 +1120,7 @@ ul.activty_list li a:hover {
   /* border: 1px solid red; */
   background-color: #0F254D;
   color: #DCAE72;
-  width: 40.2rem;
+  width: 60%;
   font-size: 1.6rem;
   position: absolute;
   padding: 20px 20px;
