@@ -75,6 +75,8 @@ div.grid_item:first-child {
   padding: 20px;
 }
 .detail_photos img {
+  width: 100%;
+  height: 100%;
   border: 2px solid lightgray;
 }
 
@@ -117,6 +119,7 @@ div.grid_item:first-child {
 /* 小圖 */
 .detail_photos .other_photo a.thumb_img {
   display: inline-block;
+  background-color: white;
   /* border: 2px solid red; */
   width: 30%;
   margin: 0 auto;
