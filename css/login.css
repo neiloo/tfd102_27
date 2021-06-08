@@ -9,7 +9,7 @@ body {
 section.login {
     /* border: 2px solid blue; */
     margin-top: 10rem;
-    height: 40rem;
+    height: 50rem;
     padding: 2rem;
 
 }
@@ -25,9 +25,11 @@ h3,
     height: 20px;
     margin: 1rem auto;
     color: #0D1C32;
+    padding: 2rem;
 }
 h3{
     display: inline-block;
+    font-size: 1.8rem;
     width: 80%;
     border-bottom: 2px solid lightgrey;
     padding-bottom: 3rem;
@@ -39,7 +41,7 @@ button.singup {
     border: none;
     width: 100%;
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 button.login {
@@ -48,7 +50,7 @@ button.login {
     border: none;
     width: 100%;
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 h5:hover {
@@ -60,7 +62,7 @@ h5:hover {
     /* border: 2px solid blue; */
     padding: 10px;
     width: 400px;
-    height: 300px;
+    height: 100%;
     background-color: white;
     border-radius: 5px;
     border-top: 10px solid #1E464A;
@@ -76,7 +78,7 @@ h5:hover {
 @media (max-width: 768px) {
     #container1,
     #container2 {
-        width: 23rem;
+        width: 100%;
     }
 }
 
@@ -92,9 +94,9 @@ h5:hover {
     color: #DCAE72;
     background: #1E464A;
     width: 100%;
-    height: 30px;
+    height: 20%;
     margin: 0.5rem auto;
-    padding: 5px;
+    padding: 4rem auto;
     border-radius: 5px;
     border: 0px;
 }
@@ -107,12 +109,12 @@ h5:hover {
 #container2 {
     visibility: hidden;
     /*剛開始消失*/
-    height: 350px;
+    height: 100%;
 }
 
 
 input {
-    padding: 5px;
+    padding: 1rem;
     border: none;
     border: solid 1px #ccc;
     border-radius: 5px;
