@@ -13,12 +13,20 @@ footer .footer {
   font-size: 1.6rem;
   text-align: center;
   color: white;
-  padding-bottom: 3rem;
+
 }
 @media (max-width: 576px) {
   footer .footer {
     font-size: 1.2rem;
   }
+}
+
+footer .footer .socilamedia_item {
+  /* border: 1px solid blue; */
+  font-size: 2.4rem;
+  text-align: center;
+  color: white;
+  padding-bottom: 3rem;
 }
 
 footer p{

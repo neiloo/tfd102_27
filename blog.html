@@ -7,13 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blog</title>
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  
+
   <link rel="stylesheet" href="./css/common/reset.css">
   <link rel="stylesheet" href="./css/common/hamburgers.css">
   <link rel="stylesheet" href="./css/common/all.css">
   <link rel="stylesheet" href="./css/common/header.css">
   <link rel="stylesheet" href="./css/common/footer.css">
   <link rel="stylesheet" href="./css/blog.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d25410b062.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -66,9 +69,9 @@
         </ul>
         <button class="hamburger hamburger--spring" type="button">
           <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
+            <span class="hamburger-inner"></span>
           </span>
-      </button>
+        </button>
       </nav>
   </header>
   <section class="page_header blog">
@@ -210,8 +213,8 @@
     <div class="footer">
       <p class="socialmedia">FOLLOW US</p>
       <p class="socilamedia_item">
-        <a href="">Facebook</a> | <a href="">Instagram </a> | <a href="">Line@</a>
-    </div>
+        <a href="https://www.facebook.com/Lovejjcome"><i class="fab fa-facebook"></i></a> | <a href="https://www.instagram.com/fernmaker/"><i class="fab fa-instagram-square"></i></a> | <a href=""><i class="fab fa-line"></i></a>
+      </div>
     <div class="footer2">
       <div class="fadd">
         <p class="fc"><span class="fe">ADDRES </span> | 地址</p>
@@ -240,17 +243,17 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
-        $(function () {
-            // 新增 div 標籤到 body 最後
-            var $menuMask = $('<div class="menu-mask"></div>').appendTo($('body'));
+    $(function () {
+      // 新增 div 標籤到 body 最後
+      var $menuMask = $('<div class="menu-mask"></div>').appendTo($('body'));
 
-            // hamburger icon 的切換
-            $("button.hamburger").click(function () {
-                $(this).toggleClass("is-active");
-                $(this).parents("header").toggleClass("show-nav");
-                $menuMask.toggleClass('show'); // 灰階背景切換
-            });
-        });
+      // hamburger icon 的切換
+      $("button.hamburger").click(function () {
+        $(this).toggleClass("is-active");
+        $(this).parents("header").toggleClass("show-nav");
+        $menuMask.toggleClass('show'); // 灰階背景切換
+      });
+    });
   </script>
 </body>
 
