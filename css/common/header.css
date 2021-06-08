@@ -177,6 +177,10 @@ ul.nav_list li > a:hover{
   padding-bottom: 10px;
 }
 
+ul.nav_list li:last-child > a:hover{
+  border-bottom: none;
+  color: #DCAE72;
+}
 .cart{
   /* border: 2px solid white; */
   position: relative;
