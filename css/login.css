@@ -28,6 +28,8 @@ h3,
 }
 
 h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
     margin: 20px auto;
     color: #a3a2a3;
 }
