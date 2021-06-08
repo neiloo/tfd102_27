@@ -230,7 +230,7 @@ li.cart:hover .icon_cart{
   pointer-events: none;
 }
 
-li.cart:hover  .cart_info{ 
+i.cart:hover  .cart_info,.cart_info.aaa{ 
 
   transform: none;
   opacity: 1;

@@ -80,7 +80,7 @@
             <a href="./checkout.html">前往結賬</a>
           </div>
         </li>
-        <li class="user"> 
+        <li class="user">
           <a href="./login.html">
             <i class="fas fa-user" style="font-size: 1.9rem;"></i>
           </a>
@@ -214,8 +214,8 @@
         <h1>最新消息</h1>
         <ul class="activty_list">
           <li class="activity1">
-            <a href="https://www.hankmax.com/pages/yeye" data-aos="fade-down"
-              data-aos-easing="ease-in-out" data-aos-duration="1000">
+            <a href="https://www.hankmax.com/pages/yeye" data-aos="fade-down" data-aos-easing="ease-in-out"
+              data-aos-duration="1000">
               <span class="date">2021-05-02</span>
               <span>【 全台植物市集＆展覽會資訊 】<br>-多肉-鹿角蕨-觀葉</span>
             </a>
@@ -310,7 +310,8 @@
       <div class="footer">
         <p class="socialmedia">FOLLOW US</p>
         <p class="socilamedia_item">
-          <a href=""><i class="fab fa-facebook"></i></a> | <a href=""><i class="fab fa-instagram-square"></i></a> | <a href=""><i class="fab fa-line"></i></a>
+          <a href=""><i class="fab fa-facebook"></i></a> | <a href=""><i class="fab fa-instagram-square"></i></a> | <a
+            href=""><i class="fab fa-line"></i></a>
       </div>
       <div class="footer2">
         <div class="fadd">
@@ -416,6 +417,11 @@
         $(this).parents("header").toggleClass("show-nav");
         $menuMask.toggleClass('show'); // 灰階背景切換
       });
+
+      // 點擊購物車 icon 事件
+      document.querySelector('.cart').addEventListener('click', function () {
+        document.querySelector('.cart_info').classList.toggle('aaa');
+      })
     });
   </script>
 </body>
