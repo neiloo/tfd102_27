@@ -119,3 +119,9 @@ input {
     border: solid 1px #ccc;
     border-radius: 5px;
 }
+
+form a{
+    text-decoration: none;
+    float: right;
+    padding: 1rem;
+}
