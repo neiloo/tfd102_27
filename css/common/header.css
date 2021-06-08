@@ -204,7 +204,7 @@ li.cart > a > .icon_cart{
   background-size: cover;
   background-image: url(../../images/icon_cart.png);
 }
-li.cart > a:hover .icon_cart{
+li.cart:hover .icon_cart{
   background-image: url(../../images/icon_cart_hover.png);
 }
 
