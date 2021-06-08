@@ -229,6 +229,12 @@ li.cart:hover .icon_cart{
   transition: all 0.25s ease-out;
   pointer-events: none;
 }
+@media (max-width: 576px) {
+  .cart .cart_info{ 
+    /* border: 2px solid red; */
+    top: -33rem; 
+  }
+}
 
 i.cart:hover  .cart_info,.cart_info.aaa{ 
 
@@ -238,6 +244,12 @@ i.cart:hover  .cart_info,.cart_info.aaa{
 
 }
 
+@media (max-width: 576px) {
+  .cart_info.aaa{ 
+    /* border: 2px solid red; */
+    top: -33rem;
+  }
+}
 .cart .cart_info table{
   width: 100%;
   /* height: 20rem; */
