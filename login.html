@@ -83,12 +83,10 @@
         <section class="login">
             <div class="login_page">
                 <div id="container1">
-
                     <div class="login">
-
                         <h3>登入 Login</h3>
 
-                        <form action="#">
+                        <form action="./index.html">
                             <input type="text" id="username" name="username" placeholder="帳號" required>
                             <div class="tab"></div>
                             <input type="text" id="password" name="password" placeholder="密碼" required>
@@ -96,19 +94,17 @@
                             <input type="submit" value="登入" class="submit">
                         </form>
 
-                        <h5 onclick="show_hide()">註冊帳號</h5>
+                        <!-- <h5 onclick="show_hide()">註冊帳號</h5> -->
+                        <button class="singup" onclick="show_hide()"> 註冊帳號</button>
 
                     </div><!-- login end-->
                 </div><!-- container1 end-->
             </div><!-- login_page end-->
 
             <div class="signup_page" id="container2">
-
                 <div class="signup">
-
                     <h3>註冊 Sign Up</h3>
-
-                    <form action="用戶管理.php">
+                    <form action="#">
                         <input type="text" id="fullname" name="fullname" placeholder="使用者全名" required>
                         <div class="tab"></div>
                         <input type="text" id="username2" name="username" placeholder="帳號" required>
@@ -120,7 +116,8 @@
                         <input type="submit" value="註冊" class="submit">
                     </form>
 
-                    <h5 onclick="show_hide()">登入帳號</h5>
+                    <!-- <h5 onclick="show_hide()">登入帳號</h5> -->
+                    <button class="login" onclick="show_hide()"> 登入帳號</button>
 
                 </div><!-- signup end-->
             </div><!-- container2 end-->

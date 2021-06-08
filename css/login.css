@@ -6,7 +6,7 @@ body {
     background-color: white;
 }
 
-section.login{
+section.login {
     /* border: 2px solid blue; */
     margin-top: 10rem;
     height: 40rem;
@@ -21,21 +21,34 @@ h3,
 #comfirm_password,
 #username2,
 #password2 {
-    width: 200px;
+    width: 100%;
     height: 20px;
-    margin: 10px;
+    margin: 1rem auto;
     color: #0D1C32;
 }
+h3{
+    display: inline-block;
+    width: 80%;
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 3rem;
+}
 
-h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
+button.singup {
     margin: 20px auto;
     color: #a3a2a3;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5rem;
 }
-h5 {
-    margin: 20px;
+
+button.login {
+    margin: 20px auto;
     color: #a3a2a3;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5rem;
 }
 
 h5:hover {
@@ -57,7 +70,7 @@ h5:hover {
     position: relative;
     margin: 0 auto;
     top: 0rem;
-    text-align:center;  
+    text-align: center;
 }
 
 .system_name {
@@ -71,9 +84,9 @@ h5:hover {
 .submit {
     color: #DCAE72;
     background: #1E464A;
-    width: 200px;
+    width: 100%;
     height: 30px;
-    margin: 10px;
+    margin: 0.5rem auto;
     padding: 5px;
     border-radius: 5px;
     border: 0px;
