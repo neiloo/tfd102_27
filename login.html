@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d25410b062.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/common/reset.css">
+    <link rel="stylesheet" href="./css/common/hamburgers.css">
+    <link rel="stylesheet" href="./css/common/all.css">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script type="text/javascript" src="./js/login.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="">
+                <nav class="navbar">
+                    <a href="./" class="logo"><img src="./images/logo.svg"></a>
+                    <ul class="nav_list">
+                        <li>
+                            <a href="./" target="">關於我們</a>
+                        </li>
+                        <li>
+                            <a href="./shop_list.html" target="">線上商品</a>
+                        </li>
+                        <li>
+                            <a href="./blog.html" target="" class="-on">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html" target="">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" target="">聯絡我們</a>
+                        </li>
+                        <li class="cart">
+                            <a href="./checkout.html">
+                                <div class="icon_cart"></div>
+                            </a>
+                            <div class="cart_info">
+                                <table>
+                                    <tr>
+                                        <td><img src="./images/product/product1.png" alt=""></td>
+                                        <td>
+                                            <p>小美人魚 - 亞猴 Ｘ 圓盾</p>
+                                            <p>1 X NT $2,988</p>
+                                        </td>
+                                        <td class="delete"><a href="#">&times;</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="./images/product/product5.png" alt=""></td>
+                                        <td>
+                                            <p>海倫仙度絲 - 波斯頓腎蕨</p>
+                                            <p>2 X NT $398</p>
+                                        </td>
+                                        <td class="delete"><a href="#">&times;</a></td>
+                                    </tr>
+                                </table>
+                                <a href="./checkout.html">前往結賬</a>
+                            </div>
+                        </li>
+                        <li class="user">
+                            <a href="javascript:void(0)">
+                                <i class="fas fa-user" style="font-size: 1.9rem;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="hamburger hamburger--spring" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </nav>
+        </header>
+        <section class="login">
+            <div class="login_page">
+                <div id="container1">
+
+                    <div class="login">
+
+                        <h3>登入 Login</h3>
+
+                        <form action="用戶管理.php">
+                            <input type="text" id="username" name="username" placeholder="帳號" required>
+                            <div class="tab"></div>
+                            <input type="text" id="password" name="password" placeholder="密碼" required>
+                            <div class="tab"></div>
+                            <input type="submit" value="登入" class="submit"
+                                onclick="location.href='https:'//codepen.io/rosewang0303/full/OQbLBv/'">
+                        </form>
+
+                        <h5 onclick="show_hide()">註冊帳號</h5>
+
+                    </div><!-- login end-->
+                </div><!-- container1 end-->
+            </div><!-- login_page end-->
+
+            <div class="signup_page" id="container2">
+
+                <div class="signup">
+
+                    <h3>註冊 Sign Up</h3>
+
+                    <form action="用戶管理.php">
+                        <input type="text" id="fullname" name="fullname" placeholder="使用者全名" required>
+                        <div class="tab"></div>
+                        <input type="text" id="username2" name="username" placeholder="帳號" required>
+                        <div class="tab"></div>
+                        <input type="text" id="password2" name="password" placeholder="密碼" required>
+                        <div class="tab"></div>
+                        <input type="text" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" required>
+                        <div class="tab"></div>
+                        <input type="submit" value="註冊" class="submit">
+                    </form>
+
+                    <h5 onclick="show_hide()">登入帳號</h5>
+
+                </div><!-- signup end-->
+            </div><!-- container2 end-->
+            </div><!-- signup_page end-->
+        </section>
+        <footer>
+            <div class="footer">
+                <p class="socialmedia">FOLLOW US</p>
+                <p class="socilamedia_item">
+                    <a href="https://www.facebook.com/Lovejjcome"><i class="fab fa-facebook"></i></a> | <a
+                        href="https://www.instagram.com/fernmaker/"><i class="fab fa-instagram-square"></i></a> | <a
+                        href=""><i class="fab fa-line"></i></a>
+            </div>
+            <div class="footer2">
+                <div class="fadd">
+                    <p class="fc"><span class="fe">ADDRES </span> | 地址</p>
+                    <p class="fc">台北市信義區菸廠路88號</p>
+                </div>
+                <div class="fadd">
+                    <p class="fc"><span class="fe">OPENING HOURS</span> | 營業時間</p>
+                    <p class="fc">星期一休息<br>
+                        星期二～四 11:00~20:00<br>
+                        星期五～日 11:00~21:30</p>
+                </div>
+                <div class="fadd">
+                    <p class="fc"><span class="fe">SUPPORT</span> ｜ 支援及服務</p>
+                    <p class="fc"><a href="./contact.html">聯絡我們</a><br>
+                        <span class="fe"><a href="./contact.html">常見 Ｑ＆Ａ</a></span>
+                    </p>
+                </div>
+            </div>
+            <div class="claim">
+                <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。<br>
+                    參考資源:青青小樹。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理<br>
+                    <a href="https://www.facebook.com/webindex/">※ [TibaMe-前端設計工程師養成班]</a><br>
+                    若有牴觸相關著作權，或有第三人主張侵害智慧財產權等情事，均由學員負法律上責任，緯育公司概不負責，請學員製作專題時需特別留意!
+                </p>
+            </div>
+        </footer>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            // 新增 div 標籤到 body 最後
+            var $menuMask = $('<div class="menu-mask"></div>').appendTo($('body'));
+
+            // hamburger icon 的切換
+            $("button.hamburger").click(function () {
+                $(this).toggleClass("is-active");
+                $(this).parents("header").toggleClass("show-nav");
+                $menuMask.toggleClass('show'); // 灰階背景切換
+            });
+        });
+    </script>
+
+</body>
+
+</html>
