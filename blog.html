@@ -66,7 +66,7 @@
               <a href="./checkout.html">前往結賬</a>
             </div>
           </li>
-          <li class="user"> 
+          <li class="user">
             <a href="javascript:void(0)">
               <i class="fas fa-user" style="font-size: 1.9rem;"></i>
             </a>
@@ -218,8 +218,10 @@
     <div class="footer">
       <p class="socialmedia">FOLLOW US</p>
       <p class="socilamedia_item">
-        <a href="https://www.facebook.com/Lovejjcome"><i class="fab fa-facebook"></i></a> | <a href="https://www.instagram.com/fernmaker/"><i class="fab fa-instagram-square"></i></a> | <a href=""><i class="fab fa-line"></i></a>
-      </div>
+        <a href="https://www.facebook.com/Lovejjcome"><i class="fab fa-facebook"></i></a> | <a
+          href="https://www.instagram.com/fernmaker/"><i class="fab fa-instagram-square"></i></a> | <a href=""><i
+            class="fab fa-line"></i></a>
+    </div>
     <div class="footer2">
       <div class="fadd">
         <p class="fc"><span class="fe">ADDRES </span> | 地址</p>
@@ -258,6 +260,11 @@
         $(this).parents("header").toggleClass("show-nav");
         $menuMask.toggleClass('show'); // 灰階背景切換
       });
+
+      // 點擊購物車 icon 事件
+      document.querySelector('.cart').addEventListener('click', function () {
+        document.querySelector('.cart_info').classList.toggle('aaa');
+      })
     });
   </script>
 </body>

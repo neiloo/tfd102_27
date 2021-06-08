@@ -13,7 +13,8 @@
 
   <!-- owlCarousel -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
   <link rel="stylesheet" href="./css/common/reset.css">
   <link rel="stylesheet" href="./css/common/hamburgers.css">
@@ -21,7 +22,7 @@
   <link rel="stylesheet" href="./css/common/header.css">
   <link rel="stylesheet" href="./css/common/footer.css">
   <link rel="stylesheet" href="./css/shop_detail.css">
-  
+
 </head>
 
 <body>
@@ -71,7 +72,7 @@
               <a href="./checkout.html">前往結賬</a>
             </div>
           </li>
-          <li class="user"> 
+          <li class="user">
             <a href="./login.html">
               <i class="fas fa-user" style="font-size: 1.9rem;"></i>
             </a>
@@ -201,8 +202,10 @@
     <div class="footer">
       <p class="socialmedia">FOLLOW US</p>
       <p class="socilamedia_item">
-        <a href="https://www.facebook.com/Lovejjcome"><i class="fab fa-facebook"></i></a> | <a href="https://www.instagram.com/fernmaker/"><i class="fab fa-instagram-square"></i></a> | <a href=""><i class="fab fa-line"></i></a>
-      </div>
+        <a href="https://www.facebook.com/Lovejjcome"><i class="fab fa-facebook"></i></a> | <a
+          href="https://www.instagram.com/fernmaker/"><i class="fab fa-instagram-square"></i></a> | <a href=""><i
+            class="fab fa-line"></i></a>
+    </div>
     <div class="footer2">
       <div class="fadd">
         <p class="fc"><span class="fe">ADDRES </span> | 地址</p>
@@ -271,13 +274,18 @@
     $(function () {
       // 新增 div 標籤到 body 最後
       var $menuMask = $('<div class="menu-mask"></div>').appendTo($('body'));
-      
+
       // hamburger icon 的切換
       $("button.hamburger").click(function () {
         $(this).toggleClass("is-active");
         $(this).parents("header").toggleClass("show-nav");
         $menuMask.toggleClass('show'); // 灰階背景切換
       });
+
+      // 點擊購物車 icon 事件
+      document.querySelector('.cart').addEventListener('click', function () {
+        document.querySelector('.cart_info').classList.toggle('aaa');
+      })
     });
   </script>
 

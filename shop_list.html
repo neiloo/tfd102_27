@@ -255,6 +255,11 @@
                 $(this).parents("header").toggleClass("show-nav");
                 $menuMask.toggleClass('show'); // 灰階背景切換
             });
+
+            // 點擊購物車 icon 事件
+            document.querySelector('.cart').addEventListener('click', function () {
+                document.querySelector('.cart_info').classList.toggle('aaa');
+            })
         });
     </script>
 
