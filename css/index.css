@@ -1043,7 +1043,7 @@ ul.activty_list li a:hover {
 @media (max-width: 576px) {
   .section4 .intro h1 {
     /* border: 2px solid red; */
-    width: 48%;
+    width: 150px;
     padding: 0 10px;
   }
 }
